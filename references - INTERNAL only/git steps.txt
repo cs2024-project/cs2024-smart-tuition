@@ -8,7 +8,7 @@ git pull origin <insert specified branch>
 
 
 when u wanna upload:
-save using CTRL S on editor
+save using CTRL S on editor !
 git add .
 git commit -m "ENTER YOUR COMMIT MESSAGE HERE"      e.g. (added styling for header)
 git push     (if this doesnt work, use git push origin <branch> e.g. git push origin main)
