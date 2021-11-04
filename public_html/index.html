@@ -25,15 +25,17 @@
     <!-- endbuild -->
 
     <title>Smart Tuition</title>
+
 </head>
 
 <body>
 
     <!-- MAIN BODY CONTAINER -->
     <div id="container">
+
         <nav class="navbar sticky-top navbar-expand-md navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" height="50px"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/header logo.png" height="50px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,14 +45,27 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Classes</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Classes</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Class schedule</a></li>
+                                <li><a class="dropdown-item" href="#">Fee</a></li>
+                                <li><a class="dropdown-item" href="#">English, Maths, Science (EMS)</a></li>
+                                <li><a class="dropdown-item" href="#">Non-academic* temp name</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="teachers.html">Teachers</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">About</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Why us</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="#">About us</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Promotion</a>
@@ -203,6 +218,7 @@
     <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
 
     <!-- USING CDN INSTEAD OF NODE_MODULES -->
     <script src="js/scripts.js"></script>
