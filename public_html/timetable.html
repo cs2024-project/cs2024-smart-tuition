@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="timetable.css">
 
     <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -44,7 +45,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Classes</a>
+                            <a class="nav-link" href="timetable.html">Classes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Teachers</a>
@@ -66,13 +67,129 @@
             </div>
         </nav>
 
-        <div id="home-section-1" style="height: 400px;">
-            section 1 content
+        <div id="home-section-1" style="height: 100px;">
+            <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 30px;">
+                <button type="button" id="Eng" class="btn btn-secondary" onclick="showEng()"
+                    autofocus="autofocus">English</button>
+                <button type="button" id="Math" class="btn btn-secondary" onclick="showMat()">Math</button>
+                <button type="button" id="Sci" class="btn btn-secondary" onclick="showSci()">Science</button>
+                <button type="button" id="Code" class="btn btn-secondary" onclick="showCod()">Coding</button>
+                <button type="button" id="Art" class="btn btn-secondary" onclick="showArt()">Art</button>
+                <button type="button" id="SnD" class="btn btn-secondary" onclick="showSnD()">Speech & Drama</button>
+            </div>
+        </div>
+        <script src="timetable.js"></script>
+        <div id="home-section-2" style="height: 1600px;">
+            <div class="grid-container" style="padding-top: 50px;">
+                <div class="grid-item">Date/Time</div>
+                <div class="grid-item">Mon</div>
+                <div class="grid-item">Tues</div>
+                <div class="grid-item">Wed</div>
+                <div class="grid-item">Thurs</div>
+                <div class="grid-item">Fri</div>
+                <div class="grid-item">Sat</div>
+                <div class="grid-item">Sun</div>
+                <div class="grid-item">8.00 to 9.00</div>
+                <div class="item2" id="mon1" style="grid-column-start: 2;"></div>
+                <div class="grid-item"></div>
+                <div class="item2" id="wed1" style="grid-column-start: 4;"></div>
+                <div class="grid-item"></div>
+                <div class="item2" id="fri1" style="grid-column-start: 6;"></div>
+                <div class="item2" id="sat1"></div>
+                <div class="item2" id="sun1" style="grid-column-start: 8;"></div>
+                <div class="grid-item">9.00 to 10.00</div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item">10.00 to 11.00</div>
+                <div class="item3" id="mon2" style="grid-column-start: 2;"></div>
+                <div class="grid-item"></div>
+                <div class="item3" id="wed2" style="grid-column-start: 4;"></div>
+                <div class="grid-item"></div>
+                <div class="item3" id="fri2" style="grid-column-start: 6;"></div>
+                <div class="item3" id="sat2"></div>
+                <div class="item3" id="sun2" style="grid-column-start: 8;"></div>
+                <div class="grid-item">10.00 to 11.00</div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item">11.00 to 12.00</div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item">12.00 to 1.00</div>
+                <div class="item1">Lunch Break</div>
+                <div class="grid-item">1.00 to 2.00</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">2.00 to 3.00</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">3.00 to 4.00</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">4.00 to 5.00</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">5.00 to 6.00</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">6.00 to 7.00</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7.00 to 8.00</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">8.00 to 9.00</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+
+
+            </div>
         </div>
 
-        <div id="home-section-2" style="height: 400px;">
-            section 2 content
-        </div>
 
         <!-- Footer -->
         <footer class="footer text-center text-md-start text-muted">

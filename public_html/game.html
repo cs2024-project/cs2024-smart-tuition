@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="styleGame.css">
+</head>
+
+<body onload="animatednumber()">
+    <script>
+        function animatednumber() {
+            var val = document.getElementById('value');
+        }
+    </script>
+    <div id="game">
+        <div id="chara"></div>
+        <div id="block"></div>
+    </div>
+    <br>
+    <div>
+        <p><strong>Pseudocode</strong></p>
+        <p id='first'>Blue box move </p>
+        <p id='second'>Red box jump </p>
+        <div id="value">0</div>
+    </div>
+    <input name="" type="button" id='btn' onclick="ani(); high1('first','yellow',1800); high2('second','green');"
+        value="Try Me!">
+
+    <script>
+        function ani() {
+            document.getElementById("btn").disabled = true;
+            setTimeout(function () {
+                document.getElementById("btn").disabled = false;
+            }, 5000);
+            document.getElementById("chara").classList.add('chara');
+            document.getElementById("block").classList.add('block');
+            var element = document.getElementById('chara');
+            var element1 = document.getElementById('block');
+            style1 = window.getComputedStyle(element);
+            style2 = window.getComputedStyle(element1);
+            // setTimeout(function () {
+            //     document.getElementById("chara").classList.add("chara");
+            // }, 10);
+            // setTimeout(function () {
+            //     document.getElementById("block").classList.add("block");
+            // }, 10);
+            var char = document.getElementById("chara");
+            document.getElementById("chara").style.animationPlayState = "running";
+            document.getElementById("block").style.animationPlayState = "running";
+            document.getElementById("chara").style.animationIterationCount = 1;
+            document.getElementById("block").style.animationIterationCount = 1;
+            setTimeout(function () {
+                document.getElementById("chara").classList.remove('chara');
+            }, 1800);
+            setTimeout(function () {
+                document.getElementById("block").classList.remove('block');
+            }, 1800);
+
+        }
+
+        function high1(id, color, seconds) {
+            var element = document.getElementById(id);
+            var origcolor = element.style.backgroundColor;
+            element.style.backgroundColor = color;
+            var t = setTimeout(function () {
+                element.style.backgroundColor = origcolor;
+            }, seconds);
+        }
+
+        function high2(id, color) {
+            var element = document.getElementById(id);
+            var origcolor = element.style.backgroundColor;
+            var t1 = setTimeout(function () {
+                element.style.backgroundColor = color;
+            }, 600);
+            var t = setTimeout(function () {
+                element.style.backgroundColor = origcolor;
+            }, (1150));
+        }
+    </script>
+</body>
+
+</html>
