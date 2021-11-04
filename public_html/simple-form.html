@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="styleGame.css">
 
     <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -18,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
@@ -45,7 +44,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="timetable.html">Classes</a>
+                            <a class="nav-link" href="#">Classes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Teachers</a>
@@ -67,138 +66,41 @@
             </div>
         </nav>
 
-        <div id="home-section-1" style="height: 400px;">
-            <br>
-            <table>
-                <tr>
-                    <td style="width: 30%;border-right: white;">
-                        <h2>Let the number speaks for itself</h2>
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="240">0</h2>
-                        <br>students enrolled in 2020
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="800">0</h2>
-                        <br>recommendation letters
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="1000">0</h2>
-                        <br>students to date
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+        <div id="home-section-1" style="height: 600px;">
+            <form>
+                <p class="required-field">
+                    Enter your Name
+                </p>
+                <input type="text" style="padding: 1px 2px 1px 2px; border-color: #767676;" id="parentName" required>
+                <p class="required-field" style="margin-top:10px;">Enter
+                    your
+                    Contact
+                    Number (eg. 91234567)
+                </p>
+                <input type="tel" id="contactNo" style="padding: 1px 2px 1px 2px;" pattern="[6,8,9]{1}[0-9]{7}"
+                    required>
+                </p>
+                <p class="required-field" style="width:300px;height: 30px;">Enter your Messages
+                </p>
+                <textarea style="height: 150px;padding: 1px 2px 1px 2px; border-color: #767676" id="txtbox" rows="3"
+                    required></textarea>
+                <br>
+                <input type="submit" class="para-button" id="submitBtn" onclick='myFunction()'>
+                <script>
+                    function myFunction() {
+                        if ((document.getElementById("parentName").value != "" && document.getElementById("contactNo")
+                                .value != "" && document.getElementById("txtbox")
+                                .value != "") && (document.getElementById("contactNo").value.toLowerCase() == document
+                                .getElementById("contactNo").value.toUpperCase())) {
+                            alert("The form has been submitted.");
+                            location.reload();
+                        } else {
+                            alert("Please try again");
+                        }
 
-                    </td>
-
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="98">0</h2>%
-                        <br>of students shown improvement
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="97">0</h2>%
-                        <br>of students have at least an A for PSLE
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="100">0</h2>
-                        <br>awards achieved by center
-                    </td>
-                </tr>
-
-
-            </table>
-            <script src="number-animation.js"></script>
-        </div>
-        <div id="home-section-2" style="height: 400px;">
-            <br>
-            <table style="width: 100%; padding-top: 20px;">
-                <tr style="border:1px solid black;">
-                <tr>
-                    <td rowspan="4" style="border:1px solid black; width: 60%;">
-                        <div id="game">
-                            <div id="chara"></div>
-                            <div id="block"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <strong>Pseudocode</strong>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <div id='first' style="height: 30px;margin-bottom: 0px;">Blue box move </div>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <p id='second' style="height: 30px;margin-bottom: 0px;">Red box jump </p>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <input name="" type="button" id='btn' onclick="ani(); high1('first','blue',1800); high2('second','red');"
-                value="Try Me!">
-
-
-            <script>
-                function ani() {
-                    document.getElementById("btn").disabled = true;
-                    setTimeout(function () {
-                        document.getElementById("btn").disabled = false;
-                    }, 3000);
-                    document.getElementById("chara").classList.add('chara');
-                    document.getElementById("block").classList.add('block');
-                    var element = document.getElementById('chara');
-                    var element1 = document.getElementById('block');
-                    style1 = window.getComputedStyle(element);
-                    style2 = window.getComputedStyle(element1);
-                    var char = document.getElementById("chara");
-                    document.getElementById("chara").style.animationPlayState = "running";
-                    document.getElementById("block").style.animationPlayState = "running";
-                    const music = new Audio('assets/jump.mp3');
-                    setTimeout(function () {
-                        music.play();
-                    }, 500);
-                    document.getElementById("chara").style.animationIterationCount = 1;
-                    document.getElementById("block").style.animationIterationCount = 1;
-                    setTimeout(function () {
-                        document.getElementById("chara").classList.remove('chara');
-                    }, 1800);
-                    setTimeout(function () {
-                        document.getElementById("block").classList.remove('block');
-                    }, 1800);
-
-                }
-
-                function high1(id, color, seconds) {
-                    var element = document.getElementById(id);
-                    var origcolor = element.style.backgroundColor;
-                    element.style.backgroundColor = color;
-                    var t = setTimeout(function () {
-                        element.style.backgroundColor = origcolor;
-                    }, seconds);
-                }
-
-                function high2(id, color) {
-                    var element = document.getElementById(id);
-                    var origcolor = element.style.backgroundColor;
-                    var t1 = setTimeout(function () {
-                        element.style.backgroundColor = color;
-                    }, 600);
-                    var t = setTimeout(function () {
-                        element.style.backgroundColor = origcolor;
-                    }, (1150));
-                }
-            </script>
+                    }
+                </script>
+            </form>
         </div>
 
         <!-- Footer -->
