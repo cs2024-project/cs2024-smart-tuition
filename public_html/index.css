@@ -17,10 +17,22 @@
     justify-content: flex-end;
 }
 
-
 #home-section-1 {
     background-color: #AEC6CF;
     padding: 0 10%;
+}
+
+.header-1 {
+    font-size: 40px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.para {
+    font-size: 16px;
+    font-weight: 300;
 }
 
 #home-section-2 {
