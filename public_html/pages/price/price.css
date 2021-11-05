@@ -110,3 +110,21 @@
         transform: translateY(-25%);
     }
 }
+
+.price-table-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: blue 1px solid; */
+    height: 100%;
+    margin-top: 50px;
+
+}
+
+.price-table {
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 340px;
+    width: 300px;
+    text-align: center;
+    /* box-shadow: grey 2px 2px 0px 0px; */
+}
