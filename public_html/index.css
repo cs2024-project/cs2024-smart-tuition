@@ -44,3 +44,30 @@
     background-color: #010B2B;
     padding: 0 10%;
 }
+
+/* Components */
+.to-top-button {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    right: 5%;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+}
+
+.to-top-button:hover {
+    animation: bounce 3s linear infinite;
+}
+
+@keyframes bounce {
+    40% {
+        transform: translateY(25%);
+    }
+
+    40% {
+        transform: translateY(-25%);
+    }
+}
