@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="styleGame.css">
 
     <link href="assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -48,7 +47,7 @@
                             <a class="nav-link" href="timetable.html">Classes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Teachers</a>
+                            <a class="nav-link" href="teachers.html">Teachers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -57,7 +56,7 @@
                             <a class="nav-link" href="#">Promotion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
                             <button class="btn btn-warning">Join Us</button>
@@ -67,169 +66,130 @@
             </div>
         </nav>
 
-        <div id="section-dark" style="height: 400px;">
-            <br>
-            <table>
-                <tr>
-                    <td style="width: 30%;border-right: white;">
-                        <h2>Let the number speaks for itself</h2>
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="240">0</h2>
-                        <br>students enrolled in 2020
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="800">0</h2>
-                        <br>recommendation letters
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="1734">0</h2>
-                        <br>students to date
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-
-                    </td>
-
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="98">0</h2>%
-                        <br>of students shown improvement
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="97">0</h2>%
-                        <br>of students have at least an A for PSLE
-                    </td>
-                    <td>
-                        <img src="assets/student.PNG" alt="students" width="80" height="80">
-                        <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="100">0</h2>
-                        <br>awards achieved by center
-                    </td>
-                </tr>
-
-
-            </table>
-            <script src="number-animation.js"></script>
+        <div id="section-dark" style="height: 150px;">
+            <p class="header-1">OUR TEACHERS</p>
         </div>
-        <div id="section-light" style="height: 400px;">
-            <br>
-            <table style="width: 100%; padding-top: 20px;">
-                <tr style="border:1px solid black;">
-                <tr>
-                    <td rowspan="4" style="border:1px solid black; width: 60%;">
-                        <div id="game">
-                            <div id="chara"></div>
-                            <div id="block"></div>
+
+        <div id="section-light" style="padding-top:50px; padding-bottom:50px">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <div class="card mb-3 mx-auto" style="max-width: 540px">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/tr_eng.png" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ms Clare Tan</h5>
+                                    <p class="card-text">The staff here are so friendly and
+                                        approachable! I was nervous when coming
+                                        here for the first time but the care and concern I received reassured
+                                        me.
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <strong>Pseudocode</strong>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <div id='first' style="height: 30px;margin-bottom: 0px;">Blue box move </div>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <p id='second' style="height: 30px;margin-bottom: 0px;">Red box jump </p>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <input name="" type="button" id='btn' onclick="ani(); high1('first','blue',1800); high2('second','red');"
-                value="Try Me!">
-
-
-            <script>
-                function ani() {
-                    document.getElementById("btn").disabled = true;
-                    setTimeout(function () {
-                        document.getElementById("btn").disabled = false;
-                    }, 3000);
-                    document.getElementById("chara").classList.add('chara');
-                    document.getElementById("block").classList.add('block');
-                    var element = document.getElementById('chara');
-                    var element1 = document.getElementById('block');
-                    style1 = window.getComputedStyle(element);
-                    style2 = window.getComputedStyle(element1);
-                    var char = document.getElementById("chara");
-                    document.getElementById("chara").style.animationPlayState = "running";
-                    document.getElementById("block").style.animationPlayState = "running";
-                    const music = new Audio('assets/jump.mp3');
-                    setTimeout(function () {
-                        music.play();
-                    }, 500);
-                    document.getElementById("chara").style.animationIterationCount = 1;
-                    document.getElementById("block").style.animationIterationCount = 1;
-                    setTimeout(function () {
-                        document.getElementById("chara").classList.remove('chara');
-                    }, 1800);
-                    setTimeout(function () {
-                        document.getElementById("block").classList.remove('block');
-                    }, 1800);
-
-                }
-
-                function high1(id, color, seconds) {
-                    var element = document.getElementById(id);
-                    var origcolor = element.style.backgroundColor;
-                    element.style.backgroundColor = color;
-                    var t = setTimeout(function () {
-                        element.style.backgroundColor = origcolor;
-                    }, seconds);
-                }
-
-                function high2(id, color) {
-                    var element = document.getElementById(id);
-                    var origcolor = element.style.backgroundColor;
-                    var t1 = setTimeout(function () {
-                        element.style.backgroundColor = color;
-                    }, 600);
-                    var t = setTimeout(function () {
-                        element.style.backgroundColor = origcolor;
-                    }, (1150));
-                }
-            </script>
-        </div>
-        <div id="home-section-1" style="height: 400px;">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-            <canvas id="myChart" style="width:80%;max-width:600px"></canvas>
-
-            <script>
-                var xValues = ["English", "Math", "Science", "Coding", "SpeechNDrama", "Art"];
-                var yValues = [80, 80, 73, 52, 47, 50];
-                var barColors = ["red", "green", "blue", "orange", "brown", "purple"];
-
-                new Chart("myChart", {
-                    type: "bar",
-                    data: {
-                        labels: xValues,
-                        datasets: [{
-                            backgroundColor: barColors,
-                            data: yValues
-                        }]
-                    },
-                    options: {
-                        legend: {
-                            display: false
-                        },
-                        title: {
-                            display: true,
-                            text: "Number of students in 2021"
-                        }
-                    }
-                });
-            </script>
-
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/tr_math.png" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mr Kim Seng</h5>
+                                    <p class="card-text">The staff here are so friendly and
+                                        approachable! I was nervous when coming
+                                        here for the first time but the care and concern I received reassured
+                                        me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/tr_sci.png" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mr Ben Lim</h5>
+                                    <p class="card-text">The staff here are so friendly and
+                                        approachable! I was nervous when coming
+                                        here for the first time but the care and concern I received reassured
+                                        me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/tr_code.png" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ms Jenny Kim</h5>
+                                    <p class="card-text">The staff here are so friendly and
+                                        approachable! I was nervous when coming
+                                        here for the first time but the care and concern I received reassured
+                                        me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 mx-auto" style="max-width: 540px">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/tr_art.png" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ms Judy Carter</h5>
+                                    <p class="card-text">The staff here are so friendly and
+                                        approachable! I was nervous when coming
+                                        here for the first time but the care and concern I received reassured
+                                        me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 mx-auto" style="max-width: 540px">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/tr_drama.png" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ms Margaret Nicholls</h5>
+                                    <p class="card-text">The staff here are so friendly and
+                                        approachable! I was nervous when coming
+                                        here for the first time but the care and concern I received reassured
+                                        me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="mx-auto d-block" src="assets/character.png" style="width:180px; height:auto">
         </div>
         <!-- Footer -->
         <footer class="footer text-center text-md-start text-muted">

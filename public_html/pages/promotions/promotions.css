@@ -3,7 +3,6 @@
 ** White (#F0F5F5) is alternating sections/ negative space
 ** Orange (#FF8800) for CTA */
 
-/* LAYOUTS AND COMMON (SHARED) COMPONENTS */
 
 #container {
     font-family: 'Overpass';
@@ -57,7 +56,14 @@
 }
 
 #section-dark-header {
+    background-color: #AEC6CF;
+
     height: 150px;
+}
+
+.footer {
+    background-color: #010B2B;
+    padding: 0 10%;
 }
 
 .header-1 {
@@ -73,26 +79,13 @@
     font-weight: 300;
 }
 
-
-.footer {
-    background-color: #010B2B;
-    padding: 0 10%;
-}
-
 .cta-wave-light {
     background-color: #F0F5F5;
     max-height: 400px;
 }
 
-.cta-wave-dark {
-    background-color: #AEC6CF;
-    max-height: 400px;
-    /* border: white 3px solid */
-}
-
 /* Unique Components */
 .to-top-button {
-    background-color: transparent;
     position: fixed;
     display: flex;
     justify-content: center;
