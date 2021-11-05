@@ -6,9 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="styleGame.css">
 
-    <link href="assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Bootstrap CSS (NODE_MODULES) -->
     <!-- build:css css/main.css -->
@@ -45,7 +44,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="timetable.html">Classes</a>
+                            <a class="nav-link" href="#">Classes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Teachers</a>
@@ -67,8 +66,12 @@
             </div>
         </nav>
 
-        <div id="section-dark" style="height: 400px;">
-            <br>
+        <div id="home-section-1" style="height: 400px;">
+            <center>
+                <br>
+                <h1>Why us?</h1>
+                <br>
+            </center>
             <table>
                 <tr>
                     <td style="width: 30%;border-right: white;">
@@ -116,121 +119,31 @@
             </table>
             <script src="number-animation.js"></script>
         </div>
-        <div id="section-light" style="height: 400px;">
-            <br>
-            <table style="width: 100%; padding-top: 20px;">
-                <tr style="border:1px solid black;">
-                <tr>
-                    <td rowspan="4" style="border:1px solid black; width: 60%;">
-                        <div id="game">
-                            <div id="chara"></div>
-                            <div id="block"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <strong>Pseudocode</strong>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <div id='first' style="height: 30px;margin-bottom: 0px;">Blue box move </div>
-                    </td>
-                </tr>
-                <tr style="border:1px solid black; text-align: center;">
-                    <td>
-                        <p id='second' style="height: 30px;margin-bottom: 0px;">Red box jump </p>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <input name="" type="button" id='btn' onclick="ani(); high1('first','blue',1800); high2('second','red');"
-                value="Try Me!">
 
-
-            <script>
-                function ani() {
-                    document.getElementById("btn").disabled = true;
-                    setTimeout(function () {
-                        document.getElementById("btn").disabled = false;
-                    }, 3000);
-                    document.getElementById("chara").classList.add('chara');
-                    document.getElementById("block").classList.add('block');
-                    var element = document.getElementById('chara');
-                    var element1 = document.getElementById('block');
-                    style1 = window.getComputedStyle(element);
-                    style2 = window.getComputedStyle(element1);
-                    var char = document.getElementById("chara");
-                    document.getElementById("chara").style.animationPlayState = "running";
-                    document.getElementById("block").style.animationPlayState = "running";
-                    const music = new Audio('assets/jump.mp3');
-                    setTimeout(function () {
-                        music.play();
-                    }, 500);
-                    document.getElementById("chara").style.animationIterationCount = 1;
-                    document.getElementById("block").style.animationIterationCount = 1;
-                    setTimeout(function () {
-                        document.getElementById("chara").classList.remove('chara');
-                    }, 1800);
-                    setTimeout(function () {
-                        document.getElementById("block").classList.remove('block');
-                    }, 1800);
-
-                }
-
-                function high1(id, color, seconds) {
-                    var element = document.getElementById(id);
-                    var origcolor = element.style.backgroundColor;
-                    element.style.backgroundColor = color;
-                    var t = setTimeout(function () {
-                        element.style.backgroundColor = origcolor;
-                    }, seconds);
-                }
-
-                function high2(id, color) {
-                    var element = document.getElementById(id);
-                    var origcolor = element.style.backgroundColor;
-                    var t1 = setTimeout(function () {
-                        element.style.backgroundColor = color;
-                    }, 600);
-                    var t = setTimeout(function () {
-                        element.style.backgroundColor = origcolor;
-                    }, (1150));
-                }
-            </script>
+        <div id="home-section-2" style="height: 400px;">
+            <img src="assets/why-us-pic1.jpg" width="500" height="300" align="left" alt="Teaching picture"
+                style="margin-top:30px">
+            <p style="margin-left: 600px;padding-top: 100px;font-size: 20px;">
+                We only employ teachers whom are ex-school teachers or the best full-time tutors. They are guaranteed to
+                be the best in their respective fields. They are fully dedicated to teach your children and help them to
+                improve.
+                During exam periods, they are willing to extend their lessons to help build confidence in your children
+                so
+                that they will be able to do better in their exams.
+            </p>
         </div>
+
         <div id="home-section-1" style="height: 400px;">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-            <canvas id="myChart" style="width:80%;max-width:600px"></canvas>
-
-            <script>
-                var xValues = ["English", "Math", "Science", "Coding", "SpeechNDrama", "Art"];
-                var yValues = [80, 80, 73, 52, 47, 50];
-                var barColors = ["red", "green", "blue", "orange", "brown", "purple"];
-
-                new Chart("myChart", {
-                    type: "bar",
-                    data: {
-                        labels: xValues,
-                        datasets: [{
-                            backgroundColor: barColors,
-                            data: yValues
-                        }]
-                    },
-                    options: {
-                        legend: {
-                            display: false
-                        },
-                        title: {
-                            display: true,
-                            text: "Number of students in 2021"
-                        }
-                    }
-                });
-            </script>
-
+            <img src="assets/why-us-pic2.jpg" width="500" height="300" align="left" alt="Teaching picture"
+                style="margin-top:30px">
+            <p style="margin-left: 600px; padding-top: 100px;font-size: 20px;">
+                Our teachers are creative and they would think of fun and engaging ways to make learning fun for your
+                children. There will be alot of hands on activities for your
+                children so that they could learn effectively.
+            </p>
         </div>
+
+
         <!-- Footer -->
         <footer class="footer text-center text-md-start text-muted">
             <!-- Section: Social media -->
