@@ -3,6 +3,7 @@
 ** White (#F0F5F5) is alternating sections/ negative space
 ** Orange (#FF8800) for CTA */
 
+
 #container {
     font-family: 'Overpass';
 }
@@ -15,6 +16,22 @@
 
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+.cta-button {
+    background-color: #FF8800;
+    border-color: #FF8800;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    height: 42px;
+    min-width: 130px;
+    padding: 0 10px;
 }
 
 #home-section-1 {
@@ -45,7 +62,7 @@
     padding: 0 10%;
 }
 
-/* Components */
+/* Unique Components */
 .to-top-button {
     position: fixed;
     display: flex;
