@@ -69,8 +69,7 @@
 
         <div id="section-dark" style="height: 100px;">
             <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 30px;">
-                <button type="button" id="Eng" class="btn btn-secondary" onclick="showEng()"
-                    autofocus="autofocus">English</button>
+                <button type="button" id="Eng" class="btn btn-secondary" onclick="showEng()">English</button>
                 <button type="button" id="Math" class="btn btn-secondary" onclick="showMat()">Math</button>
                 <button type="button" id="Sci" class="btn btn-secondary" onclick="showSci()">Science</button>
                 <button type="button" id="Code" class="btn btn-secondary" onclick="showCod()">Coding</button>
@@ -79,8 +78,9 @@
             </div>
         </div>
         <script src="timetable.js"></script>
-        <div id="section-light" style="height: 1600px;">
-            <div class="grid-container" style="padding-top: 50px;">
+
+        <div id="home-section-2" style="height: 1600px;">
+            <div id="gird" class="grid-container" style="padding-top: 50px;visibility: hidden;">
                 <div class="grid-item">Date/Time</div>
                 <div class="grid-item">Mon</div>
                 <div class="grid-item">Tues</div>
@@ -122,69 +122,53 @@
                 <div class="grid-item">12.00 to 1.00</div>
                 <div class="item1">Lunch Break</div>
                 <div class="grid-item">1.00 to 2.00</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">8</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
-                <div class="grid-item">2</div>
+                <div class="grid-item"></div>
+                <div class="item5" id="tue1"></div>
+                <div class="grid-item"></div>
+                <div class="item5" id="thurs1" style="grid-column-start: 5;"></div>
+                <div class="grid-item"></div>
+                <div class="item5" id="sat3" style="grid-column-start: 7;"></div>
+                <div class="item5" id="sun3" style="grid-column-start: 8;"></div>
                 <div class="grid-item">2.00 to 3.00</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">8</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
                 <div class="grid-item">3.00 to 4.00</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
+                <div class="item6" id="mon3"></div>
+                <div class="grid-item"></div>
+                <div class="item6" id="wed3" style="grid-column-start: 4;"></div>
+                <div class="grid-item"></div>
+                <div class="item6" id="fri3" style="grid-column-start: 6;"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
                 <div class="grid-item">4.00 to 5.00</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="item7" id="sat4"></div>
+                <div class="item7" id="sun4" style="grid-column-start: 8;"></div>
                 <div class="grid-item">5.00 to 6.00</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
+                <div class="grid-item"></div>
+                <div class="item8" id="tue2"></div>
+                <div class="grid-item"></div>
+                <div class="item8" id="thurs2" style="grid-column-start: 5;"></div>
+                <div class="grid-item"></div>
                 <div class="grid-item">6.00 to 7.00</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
                 <div class="grid-item">7.00 to 8.00</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
+                <div class="item9" id="mon4"></div>
+                <div class="grid-item"></div>
+                <div class="item9" id="wed4" style="grid-column-start: 4;"></div>
+                <div class="grid-item"></div>
+                <div class="item9" id="fri4" style="grid-column-start: 6;"></div>
+                <div class="item9" id="sat5" style="grid-column-start: 7;"></div>
+                <div class="item9" id="sun5" style="grid-column-start: 8;"></div>
                 <div class="grid-item">8.00 to 9.00</div>
-                <div class="grid-item">9</div>
-                <div class="grid-item">1</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
 
 
             </div>
