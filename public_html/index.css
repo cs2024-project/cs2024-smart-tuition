@@ -92,6 +92,7 @@
 
 /* Unique Components */
 .to-top-button {
+    background-color: transparent;
     position: fixed;
     display: flex;
     justify-content: center;
