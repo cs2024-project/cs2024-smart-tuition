@@ -14,6 +14,10 @@
     color: #F0F5F5;
 }
 
+.navbar a {
+    margin-right: 5px;
+}
+
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -34,7 +38,7 @@
     padding: 0 10px;
 }
 
-#home-section-1 {
+#home-section-dark {
     background-color: #AEC6CF;
     padding: 0 10%;
 }
@@ -52,9 +56,16 @@
     font-weight: 300;
 }
 
-#home-section-2 {
+#home-section-light {
     background-color: #F0F5F5;
     padding: 0 10%;
+}
+
+#section-content {
+    max-width: 1280px;
+    height: 100%;
+    /* temp border */
+    border: solid 1px black;
 }
 
 .footer {
