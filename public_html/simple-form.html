@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .required-field::after {
+        content: "*";
+        color: red;
+    }
+</style>
 
 <head>
     <!-- Required meta tags always come first -->
@@ -17,7 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
@@ -66,24 +72,25 @@
             </div>
         </nav>
 
-        <div id="home-section-1" style="height: 600px;">
+        <div id="section-light" style="height: 600px;">
             <form>
-                <p class="required-field">
+                <p class="required-field" style="padding-top:30px;">
                     Enter your Name
                 </p>
-                <input type="text" style="padding: 1px 2px 1px 2px; border-color: #767676;" id="parentName" required>
+                <input type="text" style="width: 500px;padding: 1px 2px 1px 2px; border-color: #767676;" id="parentName"
+                    required>
                 <p class="required-field" style="margin-top:10px;">Enter
                     your
                     Contact
                     Number (eg. 91234567)
                 </p>
-                <input type="tel" id="contactNo" style="padding: 1px 2px 1px 2px;" pattern="[6,8,9]{1}[0-9]{7}"
-                    required>
+                <input type="tel" id="contactNo" style="width: 500px; padding: 1px 2px 1px 2px;"
+                    pattern="[6,8,9]{1}[0-9]{7}" required>
                 </p>
                 <p class="required-field" style="width:300px;height: 30px;">Enter your Messages
                 </p>
-                <textarea style="height: 150px;padding: 1px 2px 1px 2px; border-color: #767676" id="txtbox" rows="3"
-                    required></textarea>
+                <textarea style="width: 500px; height: 150px;padding: 1px 2px 1px 2px; border-color: #767676"
+                    id="txtbox" rows="3" required></textarea>
                 <br>
                 <input type="submit" class="para-button" id="submitBtn" onclick='myFunction()'>
                 <script>
