@@ -7,7 +7,7 @@
 .chara {
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-image: url(./assets/character_1.png);
     position: relative;
     top: 150px;
     left: 200px;
@@ -40,10 +40,10 @@
 
 .block {
     width: 20px;
-    height: 20px;
-    background-color: blue;
+    height: 50px;
+    background-image: url(./assets/hurdle_1.png);
     position: relative;
-    top: 130px;
+    top: 100px;
     left: 480px;
     animation: block 1.5s infinite linear;
     animation-play-state: paused;

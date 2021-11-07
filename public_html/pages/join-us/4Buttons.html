@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../../assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Bootstrap CSS (NODE_MODULES) -->
     <!-- build:css css/main.css -->
@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="join-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
@@ -27,48 +27,7 @@
     <title>Smart Tuition</title>
 </head>
 
-<body onload="myFunction()">
-    <script>
-        function myFunction() {
-            set3 = localStorage.getItem("set1");
-            if (set3 == "Set C") {
-                parname = localStorage.getItem("ParName");
-                contact = localStorage.getItem("contact");
-                sub1 = localStorage.getItem("sub1");
-                sub2 = localStorage.getItem("sub2");
-                sub3 = localStorage.getItem("sub3");
-                sub4 = localStorage.getItem("sub4");
-                childName = localStorage.getItem("childName");
-                childLv = localStorage.getItem("childLv");
-                document.getElementById("parName").innerHTML = parname;
-                document.getElementById("contact").innerHTML = contact;
-                document.getElementById("set1").innerHTML = set3;
-                document.getElementById("sub1").innerHTML = sub1;
-                document.getElementById("sub2").innerHTML = sub2;
-                document.getElementById("sub3").innerHTML = sub3;
-                document.getElementById("sub4").innerHTML = sub4;
-                document.getElementById("childName").innerHTML = childName;
-                document.getElementById("childLv").innerHTML = childLv;
-            } else {
-                parname = localStorage.getItem("ParName");
-                contact = localStorage.getItem("contact");
-                sub1 = localStorage.getItem("sub1");
-                sub2 = localStorage.getItem("sub2");
-                sub3 = localStorage.getItem("sub3");
-                childName = localStorage.getItem("childName");
-                childLv = localStorage.getItem("childLv");
-                document.getElementById("parName").innerHTML = parname;
-                document.getElementById("contact").innerHTML = contact;
-                document.getElementById("set1").innerHTML = set3;
-                document.getElementById("sub1").innerHTML = sub1;
-                document.getElementById("sub2").innerHTML = sub2;
-                document.getElementById("sub3").innerHTML = sub3;
-                document.getElementById("childName").innerHTML = childName;
-                document.getElementById("childLv").innerHTML = childLv;
-            }
-            localStorage.clear();
-        }
-    </script>
+<body>
 
     <!-- MAIN BODY CONTAINER -->
     <div id="container">
@@ -107,91 +66,22 @@
             </div>
         </nav>
 
-        <div id="content">
-            <center>
-                <h1 class="header-1" style="padding-bottom: 32px;">
-                    Application Received!
-                </h1>
-            </center>
-            <div style="padding-bottom: 50px;">
-                <table style="margin: 0 auto;" width="30%;" height="600%;">
-                    <tr>
-                        <td>
-                            <strong style=" position: relative;display: inline-flex;white-space: nowrap;"
-                                class=" header-1-caption">Your application
-                                has
-                                been received.
-                                Thank you!<br>
-                                We will contact with you within 3 working days. <br></strong>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px; padding-top: 10px;">
-                            <u>Your Application Details:</u>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;width: 900px;">
-                            Parent Name:&ensp;
-                            <div style="float:right;width:88%;clear: both;" id="parName"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            Contact Number:&ensp;
-                            <div style="float:right;width:70%;" id="contact"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            Set:&ensp;
-                            <div style="float:right;width:77%;" id="set1"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            1st subject :&ensp;
-                            <div style="float:right;width:70%;" id="sub1"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            2nd subject :&ensp;
-                            <div style="float:right;width:70%;" id="sub2"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            3rd subject :&ensp;
-                            <div style="float:right;width:70%;" id="sub3"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            4th subject :&ensp;
-                            <div style="float:right;width:70%;" id="sub4"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            Child Name:&ensp;
-                            <div style="float:right;width:75%;" id="childName"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;display: inline-flex;white-space: nowrap;">
-                            Child education level:&ensp;
-                            <div style="float:right;width:75%;" id="childLv"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-bottom: 10px;">
-                            <input type="submit" value="Done" ; class="para-button"
-                                onclick="location.href = 'index.html';">
-                        </td>
-                    </tr>
-                </table>
-            </div>
+        <div id="home-section-1" style="height: 400px;">
+            <form action="join-us.html">
+                <button class="btn btn-primary" onclick="location.href = 'transfer.js';" type="submit" id="A"
+                    value="Set A">Free trial</button>
+                <button class="btn btn-primary" onclick="location.href = 'transfer.js';" type="submit" id="B"
+                    value="Set B">Single Subject</button>
+                <button class="btn btn-primary" onclick="location.href = 'transfer.js';" type="submit" id="C"
+                    value="Set C">Package A</button>
+                <button class="btn btn-primary" onclick="location.href = 'transfer.js';" type="submit" id="D"
+                    value="Set D">Package B</button>
+                <script type="text/javascript" src="transfer.js"></script>
+            </form>
+        </div>
+
+        <div id="home-section-2" style="height: 400px;">
+            section 2 content
         </div>
 
         <!-- Footer -->
