@@ -121,7 +121,7 @@
             </center>
             <CENTER>
                 <div style="position:relative;width:800px;height:800px">
-                    <canvas id="myCanvas" width="700" height="700"
+                    <canvas id="myCanvas" width="700" height="750"
                         style="border:1px solid #000000; background-color: white;box-shadow: 5px 10px#aaaaaa;"></canvas>
                     <form action="display-details.html">
                         <p class="required-field" style="position:absolute;left:71px;top:50px;width:300px;height:30px;">
@@ -211,8 +211,14 @@
                             <option value="Pri 6">P6</option>
                             <option value="Overseas Student">Overseas Student</option>
                         </select>
+                        <input type="checkbox" id="T&C" name="T&C" value="T&C"
+                            style="position:absolute;left:100px;top:650px;" required>
+                        <label for="T&C" class="required-field" style="position:absolute;left: 120px;top:644px;"> Check
+                            here to agree
+                            to our
+                            Terms and Conditions</label><br>
                         <br>
-                        <input type="submit" style="position:absolute;left:300px;top:650px;width:200px;"
+                        <input type="submit" style="position:absolute;left:300px;top:700px;width:200px;"
                             class="para-button" id="submitBtn" onclick='details.js'>
                         <script type="text/javascript" src="details.js"></script>
                     </form>
