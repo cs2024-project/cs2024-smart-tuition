@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link href="assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../../assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Bootstrap CSS (NODE_MODULES) -->
     <!-- build:css css/main.css -->
@@ -17,13 +17,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../teachers/teachers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
     <!-- endbuild -->
 
     <title>Smart Tuition</title>
@@ -35,7 +34,8 @@
     <div id="container">
         <nav class="navbar sticky-top navbar-expand-md navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" height="50px"></a>
+                <a class="navbar-brand" href="../../index.html"><img src="../../assets/header logo.png"
+                        height="50px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -43,53 +43,70 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="timetable.html">Classes</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Classes</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Class schedule</a></li>
+                                <li><a class="dropdown-item" href="#">Fee</a></li>
+                                <li><a class="dropdown-item" href="#">English, Maths, Science (EMS)</a></li>
+                                <li><a class="dropdown-item" href="#">Non-academic* temp name</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="teachers.html">Teachers</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">About</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Why us</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="#">About us</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promotion</a>
+                            <a class="nav-link" href="#">Promotions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="../contact/contact.html">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <button class="btn btn-warning">Join Us</button>
+                        <li class="nav-item" style="margin-left: 20px;">
+                            <button class="cta-button btn btn-warning"><strong>Join Us</strong></button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div id="section-dark" style="height: 150px;">
-            <p class="header-1">OUR TEACHERS</p>
+        <div id="section-dark-header">
+            <div class="header-1">TEACHERS</div>
         </div>
 
         <div id="section-light" style="padding-top:50px; padding-bottom:50px">
-            <div class="row row-cols-2">
+            <div class="row row-cols-2 mx-auto g-4">
                 <div class="col">
                     <div class="card mb-3 mx-auto" style="max-width: 540px">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/tr_eng.png" class="img-thumbnail">
+                                <img src="../../assets/tr_eng.png" class="img-thumbnail mx-auto d-block"
+                                    style="width:auto; height:100%; object-fit: cover;">
                             </div>
                             <div class="col-md-8 d-flex align-items-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Ms Clare Tan</h5>
-                                    <p class="card-text">
+                                    <p class="card-text" style="text-align:justify">
                                         <span style="font-family: 'Poppins';">
                                             A former teacher from various top institutions in Singapore,
-                                            Clare believes that there can always be more to be done to enrich students'
-                                            experience in letting the English language in their lives. Clare believes
+                                            Clare believes that there can always be more to be done to enrich
+                                            students'
+                                            experience in letting the English language in their lives. Clare
+                                            believes
                                             that
-                                            English should be taught as a life skill, not as a examinable subject. With
+                                            English should be taught as a life skill, not as a examinable subject.
+                                            With
                                             most
                                             students improving by 3 grades minimally on average, Clare believes that
                                             every
@@ -106,21 +123,22 @@
                     <div class="card mb-3 mx-auto" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/tr_math.png" class="img-thumbnail">
+                                <img src="../../assets/tr_math.png" class="img-thumbnail mx-auto d-block"
+                                    style="width:auto; height:100%; object-fit: cover;">
                             </div>
                             <div class="col-md-8 d-flex align-items-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Mr Kim Seng</h5>
-                                    <p class="card-text">
+                                    <p class="card-text" style="text-align:justify">
                                         <span style="font-family: 'Poppins';">
                                             Connecting his passion of teaching and Mathematics, Kim Seng
-                                            aspire to guide students through the syllabus, while pushing them further
-                                            and
-                                            beyond than where they stand. Kim Seng believes that Mathematics isn't as
+                                            aspires to guide students through the syllabus, while pushing them
+                                            beyond where they stand. Kim Seng believes that Mathematics isn't
+                                            as
                                             dry as
-                                            what many may believe and every kid will find their way to properly
+                                            what many may believe and every kid will find their way to
                                             understanding the subject. Proudly owning a 100% PSLE A rating, Kim Seng
-                                            promises to make Mathematics interesting and understood by your kids.
+                                            promises to make Mathematics interesting for your kids.
                                         </span>
                                     </p>
                                 </div>
@@ -133,18 +151,21 @@
                     <div class="card mb-3 mx-auto" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/tr_sci.png" class="img-thumbnail">
+                                <img src="../../assets/tr_sci.png" class="img-thumbnail"
+                                    style="width:auto; height:100%; object-fit: cover;">
                             </div>
                             <div class="col-md-8 d-flex align-items-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Mr Tom Lim</h5>
-                                    <p class="card-text">
+                                    <p class="card-text" style="text-align:justify">
                                         <span style="font-family: 'Poppins';">A former Physics Olympiad trainer, Tom
                                             aspires to push every
                                             individual
-                                            student to their limits while nurturing their love for Science With his
-                                            experience with students who had struggled with understanding complex
-                                            scientific theories, Tom always tries his best to make them bite-sized for
+                                            student to their limits while nurturing their love for Science. With his
+                                            experience with students who had struggled with the understanding of
+                                            complex
+                                            scientific theories, Tom always tries his best to make them bite-sized
+                                            for
                                             your kids' understanding.
                                         </span>
                                     </p>
@@ -157,17 +178,20 @@
                     <div class="card mb-3 mx-auto" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/tr_code.png" class="img-thumbnail">
+                                <img src="../../assets/tr_code.png" class="img-thumbnail"
+                                    style="width:auto; height:100%; object-fit: cover;">
                             </div>
                             <div class="col-md-8 d-flex align-items-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Ms Jenny Kim</h5>
-                                    <p class="card-text">
-                                        <span style="font-family: 'Poppins';">A Information Engineering and Media
+                                    <p class="card-text" style="text-align:justify">
+                                        <span style="font-family: 'Poppins';">An Information Engineering and Media
                                             graduate, Jenny aspires to
                                             bring kids to the magical world of coding to kickstart them into the
-                                            technological world of the 21st century. With her area of focus being object
-                                            oriented programmes, she aims to bring students' through the ins and outs of
+                                            technological world of the 21st century. With her area of focus being
+                                            object
+                                            oriented programming, she aims to bring students through the ins and
+                                            outs of
                                             languages including C and Java.
                                         </span>
                                     </p>
@@ -180,17 +204,19 @@
                     <div class="card mb-3 mx-auto" style="max-width: 540px">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/tr_art.png" class="img-thumbnail">
+                                <img src="../../assets/tr_art.png" class="img-thumbnail"
+                                    style="width:auto; height:100%; object-fit: cover;">
                             </div>
                             <div class="col-md-8 d-flex align-items-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Ms Judy Carter</h5>
-                                    <p class="card-text">
+                                    <p class="card-text" style="text-align:justify">
                                         <span style="font-family: 'Poppins';">
                                             With dreams to bring out everyone's best and most creative
                                             talents, Judy aims to utilise her 20 years of artistic experiences into
                                             helping
-                                            students find a new form of expression. With former students winning HCBS
+                                            students find a new form of expression. With former students winning
+                                            HCBS
                                             banks'
                                             annual art contest at the young age of 10, she believes that there is no
                                             boundary to creativity and she believes that creative minds should be
@@ -207,23 +233,27 @@
                     <div class="card mb-3 mx-auto" style="max-width: 540px">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/tr_drama.png" class="img-thumbnail">
+                                <img src="../../assets/tr_drama.png" class="img-thumbnail"
+                                    style="width:auto; height:100%; object-fit: cover;">
                             </div>
                             <div class="col-md-8 d-flex align-items-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Ms Margaret Nicholls</h5>
-                                    <p class="card-text">
+                                    <p class="card-text" style="text-align:justify">
                                         <span style="font-family: 'Poppins';">Having worked for big name musicals
                                             including <i>Hamilton,</i>
-                                            <i>Hairspray</i> and <i>Les Miserables</i>, Margaret works on having your
+                                            <i>Hairspray</i> and <i>Les Miserables</i>, Margaret works on having
+                                            your
                                             child
                                             learn how to express, how to enact and how to empathise. Through her
                                             lessons,
                                             students will learn how to be both a cast member of an act while also
                                             function
-                                            as part of a crew. In her class, she will also guide students through poetry
+                                            as part of a crew. In her class, she will also guide students through
+                                            poetry
                                             and
-                                            stand up comedy based performances. Many parents have testified that their
+                                            stand up comedy based performances. Many parents have testified that
+                                            their
                                             child
                                             has become much more outgoing with Margaret around.
                                         </span>
@@ -234,7 +264,6 @@
                     </div>
                 </div>
             </div>
-            <img class="mx-auto d-block" src="assets/character.png" style="width:180px; height:auto">
         </div>
         <!-- Footer -->
         <footer class="footer text-center text-md-start text-muted">
