@@ -57,7 +57,8 @@
 }
 
 #section-dark-header {
-    height: 150px;
+    padding: 0 10%;
+    background-color: #AEC6CF;
 }
 
 .header-1 {

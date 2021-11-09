@@ -54,3 +54,8 @@
     grid-column-start: 7;
     grid-row-end: 10;
 }
+
+#section-dark-header {
+    padding: 0 10%;
+    background-color: #AEC6CF;
+}
