@@ -117,3 +117,31 @@
         transform: translateY(-25%);
     }
 }
+
+.animation-1 {
+    animation: breathing 5s linear infinite;
+}
+
+.hover-scale {}
+
+.hover-scale:hover {
+    transform: scale(1.2);
+    animation: none;
+}
+
+@keyframes breathing {
+    0% {
+        box-shadow: 0 0 0 0px rgba(230, 205, 110, 0.25),
+            0 0 0 0px rgba(230, 205, 110, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 4px 4px rgba(240, 224, 78, 0.4),
+            0 0 0 7px rgba(231, 212, 43, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0px rgba(230, 205, 110, 0.25),
+            0 0 0 0px rgba(230, 205, 110, 0.2);
+    }
+}
