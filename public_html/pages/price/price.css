@@ -6,6 +6,9 @@
 
 #container {
     font-family: 'Overpass';
+
+    /* TODO: for MOBILE, STANDARDISE ACROSS */
+    min-width: 300px;
 }
 
 .navbar {
@@ -57,8 +60,12 @@
 
 #section-dark-header {
     background-color: #AEC6CF;
-
     height: 150px;
+
+    /* TODO: STANDARDISE FOR ALL */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -73,6 +80,23 @@
     padding-bottom: 50px;
     text-align: center;
 }
+
+/* TODO: replace header-1, then standardise across */
+.header-1-temporary {
+
+    font-size: 40px;
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 80px;
+
+}
+
 
 .para {
     font-size: 16px;

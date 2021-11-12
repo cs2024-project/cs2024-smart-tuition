@@ -122,8 +122,6 @@
     animation: breathing 5s linear infinite;
 }
 
-.hover-scale {}
-
 .hover-scale:hover {
     transform: scale(1.2);
     animation: none;
