@@ -1,4 +1,209 @@
+/** Dark blue (#010B2B) is navbar and footer
+** Pastel blue (#AEC6CF) and
+** White (#F0F5F5) is alternating sections/ negative space
+** Orange (#FF8800) for CTA */
+
+/* LAYOUTS AND COMMON (SHARED) COMPONENTS */
+
+#container {
+    font-family: 'Overpass';
+}
+
+.navbar {
+    padding: 0 10%;
+    background-color: #010B2B;
+    color: #F0F5F5;
+}
+
+.navbar a {
+    margin-right: 5px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.cta-button {
+    background-color: #FF8800;
+    border-color: #FF8800;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    height: 42px;
+    min-width: 130px;
+    padding: 0 10px;
+}
+
+#section-dark {
+    background-color: #AEC6CF;
+    padding: 0 10%;
+}
+
+#section-light {
+    background-color: #F0F5F5;
+    padding: 0 10%;
+}
+
+#section-content {
+    max-width: 1280px;
+    height: 100%;
+    /* temp border */
+    border: solid 1px black;
+}
+
 #section-dark-header {
     padding: 0 10%;
     background-color: #AEC6CF;
+}
+
+.header-1 {
+    font-size: 40px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.para {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.footer {
+    background-color: #010B2B;
+    padding: 0 10%;
+}
+
+.cta-wave-light {
+    background-color: #F0F5F5;
+    max-height: 400px;
+}
+
+.cta-wave-dark {
+    background-color: #AEC6CF;
+    max-height: 400px;
+    /* border: white 3px solid */
+}
+
+/* Unique Components */
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    background-color: #F0F5F5;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item1 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 9;
+}
+
+.item2 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 2;
+    grid-column-start: 7;
+    grid-row-end: 4;
+}
+
+.item3 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 4;
+    grid-column-start: 7;
+    grid-row-end: 6;
+}
+
+.item4 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 8;
+    grid-column-start: 7;
+    grid-row-end: 10;
+}
+
+.item5 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 8;
+    grid-column-start: 3;
+    grid-row-end: 10;
+}
+
+.item6 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 10;
+    grid-column-start: 2;
+    grid-row-end: 12;
+}
+
+.item7 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 11;
+    grid-column-start: 7;
+    grid-row-end: 13;
+}
+
+.item8 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 12;
+    grid-column-start: 3;
+    grid-row-end: 14;
+}
+
+.item9 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    grid-row-start: 14;
+    grid-column-start: 2;
+    grid-row-end: 16;
 }
