@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleGame.css">
 
     <link href="assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -51,7 +52,8 @@
                             <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" href="#">Classes</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Class schedule</a></li>
+                                <li><a class="dropdown-item" href="../public_html/pages/timetable/timetable.html">Class
+                                        schedule</a></li>
                                 <li><a class="dropdown-item" href="../public_html/pages/price/price.html">Fee</a></li>
                                 <li><a class="dropdown-item" href="#">English, Maths, Science (EMS)</a></li>
                                 <li><a class="dropdown-item" href="#">Non-academic* temp name</a></li>
@@ -76,7 +78,9 @@
                             <a class="nav-link" href="pages/contact/contact.html">Contact</a>
                         </li>
                         <li class="nav-item" style="margin-left: 20px;">
-                            <button class="cta-button btn btn-warning"><strong>Join Us</strong></button>
+                            <button class="cta-button btn btn-warning"
+                                onclick="location.href = './pages/join-us/join-us.html';" <strong>Join
+                                Us</strong></button>
                         </li>
                     </ul>
                 </div>
@@ -93,10 +97,14 @@
                 </div>
 
                 <div style="display: flex; justify-content: center; position: relative; bottom: 0; ">
-                    <button class="cta-button btn btn-warning animation-1 hover-scale"
-                        style="transition: transform 0.3s;">
-                        FREE TRIAL
-                    </button>
+                    <form action="./pages/join-us/join-us.html">
+                        <button class="cta-button btn btn-warning animation-1 hover-scale"
+                            style="transition: transform 0.3s;" onclick="location.href = './pages/join-us/transfer.js';"
+                            type="submit" id="A" value="Set A">
+                            FREE TRIAL
+                        </button>
+                        <script type="text/javascript" src="./pages/join-us/transfer.js"></script>
+                    </form>
                 </div>
             </div>
         </div>
@@ -108,7 +116,52 @@
                     why us + stats
                 </h1>
                 heres why we could be the best education for YOUR child<br>
+                <table>
+                    <tr>
+                        <td style="width: 30%;border-right: white;">
+                            <h2>Let our numbers make the choice for you</h2>
+                        </td>
+                        <td>
+                            <img src="../public_html/assets/stat_1.png" alt="students" width="80" height="80">
+                            <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="240">0</h2>
+                            <br>students enrolled in 2020
+                        </td>
+                        <td>
+                            <img src="../public_html/assets/stat_2.png" alt="students" width="80" height="80">
+                            <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="800">0</h2>
+                            <br>recommendation letters
+                        </td>
+                        <td>
+                            <img src="../public_html/assets/stat_3.png" alt="students" width="80" height="80">
+                            <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="1734">0</h2>
+                            <br>students to date
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
 
+                        </td>
+
+                        <td>
+                            <img src="../public_html/assets/stat_4.png" alt="students" width="80" height="80">
+                            <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="98">0</h2>%
+                            <br>of students shown improvement
+                        </td>
+                        <td>
+                            <img src="../public_html/assets/stat_5.png" alt="students" width="80" height="80">
+                            <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="97">0</h2>%
+                            <br>of students have at least an A for PSLE
+                        </td>
+                        <td>
+                            <img src="../public_html/assets/stat_6.png" alt="students" width="80" height="80">
+                            <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="100">0</h2>
+                            <br>awards achieved by center
+                        </td>
+                    </tr>
+
+
+                </table>
+                <script src="number-animation.js"></script>
             </div>
         </div>
 
@@ -166,9 +219,91 @@
         <div id="section-light">
             <div id="section-content">
                 <h1>
-                    game demo <br><br><br>
+                    game demo
                 </h1>
-                <hr>
+                <table style="width: 100%; padding-top: 20px;">
+                    <tr style="border:1px solid black;">
+                    <tr>
+                        <td rowspan="4" style="border:1px solid black; width: 60%;">
+                            <img src="assets/game-background.jpg" width="700" height="222" align="left"
+                                alt="Game background">
+                            <div id="game">
+                                <div id="chara"></div>
+                                <div id="block"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border:1px solid black; text-align: center;">
+                        <td>
+                            <strong>Pseudocode</strong>
+                        </td>
+                    </tr>
+                    <tr style="border:1px solid black; text-align: center;">
+                        <td>
+                            <div id='first' style="height: 30px;margin-bottom: 0px;">Hurdle move </div>
+                        </td>
+                    </tr>
+                    <tr style="border:1px solid black; text-align: center;">
+                        <td>
+                            <p id='second' style="height: 30px;margin-bottom: 0px;">Character jump </p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <input name="" type="button" id='btn'
+                    onclick="ani(); high1('first','blue',1800); high2('second','red');" value="Try Me!">
+
+
+                <script>
+                    function ani() {
+                        document.getElementById("btn").disabled = true;
+                        setTimeout(function () {
+                            document.getElementById("btn").disabled = false;
+                        }, 3000);
+                        document.getElementById("chara").classList.add('chara');
+                        document.getElementById("block").classList.add('block');
+                        var element = document.getElementById('chara');
+                        var element1 = document.getElementById('block');
+                        style1 = window.getComputedStyle(element);
+                        style2 = window.getComputedStyle(element1);
+                        var char = document.getElementById("chara");
+                        document.getElementById("chara").style.animationPlayState = "running";
+                        document.getElementById("block").style.animationPlayState = "running";
+                        const music = new Audio('assets/jump.mp3');
+                        setTimeout(function () {
+                            music.play();
+                        }, 500);
+                        document.getElementById("chara").style.animationIterationCount = 1;
+                        document.getElementById("block").style.animationIterationCount = 1;
+                        setTimeout(function () {
+                            document.getElementById("chara").classList.remove('chara');
+                        }, 1800);
+                        setTimeout(function () {
+                            document.getElementById("block").classList.remove('block');
+                        }, 1800);
+
+                    }
+
+                    function high1(id, color, seconds) {
+                        var element = document.getElementById(id);
+                        var origcolor = element.style.backgroundColor;
+                        element.style.backgroundColor = color;
+                        var t = setTimeout(function () {
+                            element.style.backgroundColor = origcolor;
+                        }, seconds);
+                    }
+
+                    function high2(id, color) {
+                        var element = document.getElementById(id);
+                        var origcolor = element.style.backgroundColor;
+                        var t1 = setTimeout(function () {
+                            element.style.backgroundColor = color;
+                        }, 600);
+                        var t = setTimeout(function () {
+                            element.style.backgroundColor = origcolor;
+                        }, (1150));
+                    }
+                </script>
                 <h1>
                     Testimonials
                 </h1>
@@ -286,57 +421,65 @@
                 <h1>
                     PRICE
                 </h1>
-                <div class="price-table-container">
-                    <div class="price-table">
-                        <div style="height: 80%;">
+                <form action="./pages/join-us/join-us.html">
+                    <div class="price-table-container">
+                        <div class="price-table">
+                            <div style="height: 80%;">
+                                <div class="plan-banner">
+                                    <img src="assets/plan_1.png">
+                                </div>
+                                <div style="padding: 10px 20px 0 20px; text-align: start;">
+                                    <li>One Subject</li>
+                                    <li>SGD$150/Month</li>
+                                    <li>1 Free Trial Class</li>
+                                </div>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button class="cta-button btn btn-info"
+                                    onclick="location.href = './pages/join-us/transfer.js';" type="submit" id="B"
+                                    value="Set B">APPLY</button>
+                            </div>
+                        </div>
+
+                        <div class="price-table">
                             <div class="plan-banner">
-                                <img src="assets/plan_1.png">
+                                <img src="assets/plan_2.png">
                             </div>
                             <div style="padding: 10px 20px 0 20px; text-align: start;">
-                                <li>One Subject</li>
-                                <li>SGD$150/Month</li>
-                                <li>1 Free Trial Class</li>
+                                <li>3 Subjects</li>
+                                <li>SGD$390/Month <span class="badge bg-danger">Save $60!</span></li>
+                                <li>2 Free Trial Classes</li>
+                                <li>First Month material Paid!</li>
+                                </span>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button class="cta-button btn btn-info"
+                                    onclick="location.href = './pages/join-us/transfer.js';" type="submit" id="C"
+                                    value="Set C">APPLY</button>
                             </div>
                         </div>
-                        <div style="margin-top: 10px;">
-                            <button class="cta-button btn btn-info">APPLY</button>
+
+                        <div class="price-table">
+                            <div class="plan-banner">
+                                <img src="assets/plan_3.png">
+                            </div>
+                            <div style="padding: 10px 15px 0 15px; text-align: start;">
+                                <li>5 Subjects</li>
+                                <li>SGD$600/Month <span class="badge bg-danger">Save $150!</span></li>
+                                <li>3 Free Trial Classes</li>
+                                <li>First Three Months material Paid!</li>
+                                </span>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button class="cta-button btn btn-info"
+                                    onclick="location.href = './pages/join-us/transfer.js';" type="submit" id="D"
+                                    value="Set D">APPLY</button>
+                            </div>
                         </div>
+
                     </div>
-
-                    <div class="price-table">
-                        <div class="plan-banner">
-                            <img src="assets/plan_2.png">
-                        </div>
-                        <div style="padding: 10px 20px 0 20px; text-align: start;">
-                            <li>3 Subjects</li>
-                            <li>SGD$390/Month <span class="badge bg-danger">Save $60!</span></li>
-                            <li>2 Free Trial Classes</li>
-                            <li>First Month material Paid!</li>
-                            </span>
-                        </div>
-                        <div style="margin-top: 10px;">
-                            <button class="cta-button btn btn-info">APPLY</button>
-                        </div>
-                    </div>
-
-                    <div class="price-table">
-                        <div class="plan-banner">
-                            <img src="assets/plan_3.png">
-                        </div>
-                        <div style="padding: 10px 15px 0 15px; text-align: start;">
-                            <li>5 Subjects</li>
-                            <li>SGD$600/Month <span class="badge bg-danger">Save $150!</span></li>
-                            <li>3 Free Trial Classes</li>
-                            <li>First Three Months material Paid!</li>
-                            </span>
-                        </div>
-                        <div style="margin-top: 10px;">
-                            <button class="cta-button btn btn-info">APPLY</button>
-                        </div>
-                    </div>
-
-                </div>
-
+                    <script type="text/javascript" src="./pages/join-us/transfer.js"></script>
+                </form>
             </div>
         </div>
 
