@@ -54,7 +54,6 @@
 }
 
 #section-content {
-    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST*/
     height: 100%;
     /* temp border */
     border: solid 1px black;
@@ -64,7 +63,6 @@
     background-color: #AEC6CF;
     height: 150px;
 
-    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,17 +73,9 @@
     padding: 0 10%;
 }
 
-.header-1 {
-    font-size: 40px;
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-}
 
 /* TODO: replace header-1, then standardise across */
-.header-1-temporary {
-
+.header-1 {
     font-size: 40px;
     height: auto;
     text-align: center;
@@ -96,7 +86,6 @@
 
     /* to offset the icon's positioning (80px) */
     padding-left: 80px;
-
 }
 
 

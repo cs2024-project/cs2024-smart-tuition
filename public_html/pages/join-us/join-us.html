@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    .required-field::after {
-        content: "*";
-        color: red;
-    }
-</style>
 
 <head>
     <!-- Required meta tags always come first -->
@@ -108,10 +102,8 @@
             <p class="header-1">JOIN US</p>
         </div>
         <div id="section-light">
-            <p id="sub" style="padding-top: 30px; text-align: center;font-size: 30px;margin-bottom: 5px;">
-                Please select a promotion:
-            </p>
-            <center>
+            <h2>Please select a promotion:</h2>
+            <div style="padding-bottom:30px">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                         value="Set A" checked>
@@ -132,91 +124,81 @@
                         value="Set D">
                     <label class="form-check-label" for="inlineRadio4">Package B</label>
                 </div>
-            </center>
-            <CENTER>
-                <div style="position:relative;width:800px;height:800px">
-                    <canvas id="myCanvas" width="700" height="750"
-                        style="border:1px solid #000000; background-color: white;box-shadow: 5px 10px#aaaaaa;"></canvas>
-                    <form action="display-details.html">
-                        <p class="required-field" style="position:absolute;left:71px;top:50px;width:300px;height:30px;">
-                            Enter your Name (as per NRIC)
-                        </p>
+            </div>
+            <div class="d-block mx-auto align-items-center justify-content-center" style="width:60%">
+                <form action="display-details.html">
+                    <div>
+                        <label for="parentName" class="form-label" id="required-field">Enter
+                            your Name</label>
                         <input type="text"
-                            style="position:absolute;left:100px;top:80px;width:600px;padding: 1px 2px 1px 2px; border-color: #767676;"
+                            style="width:100%; margin-bottom:20px; padding: 1px 2px 1px 2px; border-color: #767676;"
                             class="
                                 form-control" id="parentname" required>
-                        <p class="required-field"
-                            style="position:absolute;left:67px;top: 130px;width:400px;height: 30px;">
-                            Enter your
-                            Contact
-                            Number (eg. 91234567)
-                        </p>
-                        <input type="tel" style="position:absolute;left:100px;top:160px;width:600px;" id="contactno"
+                    </div>
+                    <div>
+                        <label for="contactNo" class="form-label" id="required-field">Enter your Contact Number (eg.
+                            91234567)</label>
+                        <input type="tel" style="width:100%; margin-bottom:20px;" id="contactNo"
                             pattern="[6,8,9]{1}[0-9]{7}" required>
-                        <p class="required-field"
-                            style="position:absolute;left:13px;top:210px;width:300px;height: 30px;">
-                            Select subjects
-                        </p>
-                        <select id="subid1" name="sub1"
-                            style="position:absolute;left:100px;top:240px;width:600px;height: 30px;">
-                            <option value="English">English</option>
-                            <option value="Math">Math</option>
-                            <option value="Science">Science</option>
-                            <option value="Coding">Coding</option>
-                            <option value="Speech and Drama">Speech and Drama</option>
-                            <option value="Art">Art</option>
-                        </select>
-                        <select id="subid2" name="sub2"
-                            style="position:absolute;left:100px;top:290px;width:600px;height: 30px;" disabled>
-                            <option value="English">English</option>
-                            <option value="Math">Math</option>
-                            <option value="Science">Science</option>
-                            <option value="Coding">Coding</option>
-                            <option value="Speech and Drama">Speech and Drama</option>
-                            <option value="Art">Art</option>
-                        </select>
-                        <select id="subid3" name="sub3"
-                            style="position:absolute;left:100px;top:340px;width:600px;height: 30px;" disabled>
-                            <option value="English">English</option>
-                            <option value="Math">Math</option>
-                            <option value="Science">Science</option>
-                            <option value="Coding">Coding</option>
-                            <option value="Speech and Drama">Speech and Drama</option>
-                            <option value="Art">Art</option>
-                        </select>
-                        <select id="subid4" name="sub4"
-                            style="position:absolute;left:100px;top:390px;width:600px;height: 30px;" disabled>
-                            <option value="English">English</option>
-                            <option value="Math">Math</option>
-                            <option value="Science">Science</option>
-                            <option value="Coding">Coding</option>
-                            <option value="Speech and Drama">Speech and Drama</option>
-                            <option value="Art">Art</option>
-                        </select>
-                        <select id="subid5" name="sub5"
-                            style="position:absolute;left:100px;top:440px;width:600px;height: 30px;" disabled>
-                            <option value="English">English</option>
-                            <option value="Math">Math</option>
-                            <option value="Science">Science</option>
-                            <option value="Coding">Coding</option>
-                            <option value="Speech and Drama">Speech and Drama</option>
-                            <option value="Art">Art</option>
-                        </select>
+                    </div>
 
-                        <p class="required-field"
-                            style="position:absolute;left:43px;top:490px;width:300px;height: 30px;">
-                            Enter your
-                            Child Name</p>
+                    <div>
+                        <label for="subid" class="form-label" id="required-field">Select Subjects</label>
+                        <select id="subid" name="sub1">
+                            <option value="English">English</option>
+                            <option value="Math">Math</option>
+                            <option value="Science">Science</option>
+                            <option value="Coding">Coding</option>
+                            <option value="Speech and Drama">Speech and Drama</option>
+                            <option value="Art">Art</option>
+                        </select>
+                        <select id="subid" name="sub2" disabled>
+                            <option value="English">English</option>
+                            <option value="Math">Math</option>
+                            <option value="Science">Science</option>
+                            <option value="Coding">Coding</option>
+                            <option value="Speech and Drama">Speech and Drama</option>
+                            <option value="Art">Art</option>
+                        </select>
+                        <select id="subid" name="sub3" disabled>
+                            <option value="English">English</option>
+                            <option value="Math">Math</option>
+                            <option value="Science">Science</option>
+                            <option value="Coding">Coding</option>
+                            <option value="Speech and Drama">Speech and Drama</option>
+                            <option value="Art">Art</option>
+                        </select>
+                        <select id="subid" name="sub4" disabled>
+                            <option value="English">English</option>
+                            <option value="Math">Math</option>
+                            <option value="Science">Science</option>
+                            <option value="Coding">Coding</option>
+                            <option value="Speech and Drama">Speech and Drama</option>
+                            <option value="Art">Art</option>
+                        </select>
+                        <select id="subid" name="sub5" style="margin-bottom:20px" disabled>
+                            <option value="English">English</option>
+                            <option value="Math">Math</option>
+                            <option value="Science">Science</option>
+                            <option value="Coding">Coding</option>
+                            <option value="Speech and Drama">Speech and Drama</option>
+                            <option value="Art">Art</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label for="parentName" class="form-label" id="required-field">Enter your
+                            Child's Name</label>
                         <input type="text"
-                            style="position:absolute;left:100px;top:520px;width:600px;padding: 1px 2px 1px 2px; border-color: #767676"
-                            class="
-                                    form-control" id="childName" required>
-                        <p class="required-field"
-                            style="position:absolute;left:81px;top:570px;width:300px;height: 30px;">
-                            Your Child
-                            current education level</p>
-                        <select id="priId" name="pri"
-                            style="position:absolute;left:100px;top:600px;width:600px;height: 30px;">
+                            style="margin-bottom:20px; width:100%;padding: 1px 2px 1px 2px; border-color: #767676"
+                            class="form-control" id="childName" required>
+                    </div>
+
+                    <div>
+                        <label for="parentName" class="form-label" id="required-field">Your Child's
+                            current education level</label>
+                        <select id="priId" name="pri" style="width:100%;height: 30px; margin-bottom:20px">
                             <option value="Pri 1">P1</option>
                             <option value="Pri 2">P2</option>
                             <option value="Pri 3">P3</option>
@@ -225,20 +207,16 @@
                             <option value="Pri 6">P6</option>
                             <option value="Overseas Student">Overseas Student</option>
                         </select>
-                        <input type="checkbox" id="T&C" name="T&C" value="T&C"
-                            style="position:absolute;left:100px;top:650px;" required>
-                        <label for="T&C" class="required-field" style="position:absolute;left: 120px;top:644px;"> Check
-                            here to agree
-                            to our
-                            Terms and Conditions</label><br>
-                        <br>
-                        <input type="submit" style="position:absolute;left:300px;top:700px;width:200px;"
-                            class="para-button" id="submitBtn" onclick='details.js'>
-                        <script type="text/javascript" src="details.js"></script>
-                    </form>
-
-                </div>
-            </CENTER>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="T&C" name="T&C" value="T&C" required>
+                        <label for="T&C" class="required-field" style="margin-bottom:20px">
+                            Check here to agree to our Terms and Conditions</label>
+                    </div>
+                    <input type="submit" class="para-button" id="submitBtn" onclick='details.js'>
+                    <script type="text/javascript" src="details.js"></script>
+                </form>
+            </div>
         </div>
 
         <!-- Footer -->

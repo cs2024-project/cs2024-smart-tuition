@@ -52,7 +52,7 @@
 #section-content {
     height: 100%;
     /* temp border */
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 #section-dark-header {
@@ -275,6 +275,10 @@
 
 @media (max-width: 450px) {
     .img-container {
+        display: none;
+    }
+
+    #game-table {
         display: none;
     }
 }
