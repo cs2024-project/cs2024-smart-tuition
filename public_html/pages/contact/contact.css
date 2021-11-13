@@ -77,8 +77,11 @@
 }
 
 #section-dark-header {
-    padding: 0 10%;
     background-color: #AEC6CF;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #faq {
@@ -105,9 +108,15 @@
 .header-1 {
     font-size: 40px;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 150px;
+
 }
 
 .para {
