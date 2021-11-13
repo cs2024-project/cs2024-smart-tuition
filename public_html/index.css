@@ -277,4 +277,8 @@
     .img-container {
         display: none;
     }
+
+    #game-table {
+        display: none;
+    }
 }
