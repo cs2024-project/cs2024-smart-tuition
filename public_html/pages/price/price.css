@@ -6,15 +6,17 @@
 
 #container {
     font-family: 'Overpass';
-
     /* TODO: for MOBILE, STANDARDISE ACROSS */
+    margin: 0 auto;
     min-width: 300px;
+
 }
 
 .navbar {
     padding: 0 10%;
     background-color: #010B2B;
     color: #F0F5F5;
+
 }
 
 .navbar a {
@@ -52,7 +54,8 @@
 }
 
 #section-content {
-    max-width: 1280px;
+    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST*/
+
     height: 100%;
     /* temp border */
     border: solid 1px black;
@@ -62,7 +65,7 @@
     background-color: #AEC6CF;
     height: 150px;
 
-    /* TODO: STANDARDISE FOR ALL */
+    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +140,11 @@
 
 .price-table-container {
     display: flex;
+
+    /* responsiveness */
+    flex-wrap: wrap;
+    flex-direction: row;
+
     justify-content: space-evenly;
     /* border: blue 1px solid; */
     height: 100%;
@@ -145,10 +153,23 @@
 }
 
 .price-table {
-    border: 1px solid grey;
+    background-color: wheat;
+    box-shadow: lightgray 3px 3px;
     border-radius: 20px;
     height: 340px;
     width: 300px;
     text-align: center;
-    /* box-shadow: grey 2px 2px 0px 0px; */
+
+    /* margin when wrapped */
+    margin-bottom: 50px;
+}
+
+.plan-banner {
+    width: 300px;
+}
+
+.plan-banner img {
+    border-radius: 20px 20px 0 0px;
+    width: 300px;
+    object-fit: cover;
 }
