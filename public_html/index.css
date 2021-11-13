@@ -41,7 +41,7 @@
 
 #section-dark {
     background-color: #AEC6CF;
-    padding: 0 10%;
+    padding: 20px 10%;
 }
 
 #section-light {
@@ -273,7 +273,18 @@
 
 /* TODO:  MOBILE */
 
+.resp-message {
+    display: none;
+    margin: 20px 0;
+    font-style: italic;
+}
+
 @media (max-width: 450px) {
+
+    .resp-message {
+        display: unset;
+    }
+
     .img-container {
         display: none;
     }
