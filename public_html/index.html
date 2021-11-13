@@ -93,10 +93,14 @@
                 </div>
 
                 <div style="display: flex; justify-content: center; position: relative; bottom: 0; ">
-                    <button class="cta-button btn btn-warning animation-1 hover-scale"
-                        style="transition: transform 0.3s;">
-                        FREE TRIAL
-                    </button>
+                    <form action="./pages/join-us/join-us.html">
+                        <button class="cta-button btn btn-warning animation-1 hover-scale"
+                            style="transition: transform 0.3s;" onclick="location.href = './pages/join-us/transfer.js';"
+                            type="submit" id="A" value="Set A">
+                            FREE TRIAL
+                        </button>
+                        <script type="text/javascript" src="./pages/join-us/transfer.js"></script>
+                    </form>
                 </div>
             </div>
         </div>
@@ -286,57 +290,65 @@
                 <h1>
                     PRICE
                 </h1>
-                <div class="price-table-container">
-                    <div class="price-table">
-                        <div style="height: 80%;">
+                <form action="./pages/join-us/join-us.html">
+                    <div class="price-table-container">
+                        <div class="price-table">
+                            <div style="height: 80%;">
+                                <div class="plan-banner">
+                                    <img src="assets/plan_1.png">
+                                </div>
+                                <div style="padding: 10px 20px 0 20px; text-align: start;">
+                                    <li>One Subject</li>
+                                    <li>SGD$150/Month</li>
+                                    <li>1 Free Trial Class</li>
+                                </div>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button class="cta-button btn btn-info"
+                                    onclick="location.href = './pages/join-us/transfer.js';" type="submit" id="B"
+                                    value="Set B">APPLY</button>
+                            </div>
+                        </div>
+
+                        <div class="price-table">
                             <div class="plan-banner">
-                                <img src="assets/plan_1.png">
+                                <img src="assets/plan_2.png">
                             </div>
                             <div style="padding: 10px 20px 0 20px; text-align: start;">
-                                <li>One Subject</li>
-                                <li>SGD$150/Month</li>
-                                <li>1 Free Trial Class</li>
+                                <li>3 Subjects</li>
+                                <li>SGD$390/Month <span class="badge bg-danger">Save $60!</span></li>
+                                <li>2 Free Trial Classes</li>
+                                <li>First Month material Paid!</li>
+                                </span>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button class="cta-button btn btn-info"
+                                    onclick="location.href = './pages/join-us/transfer.js';" type="submit" id="C"
+                                    value="Set C">APPLY</button>
                             </div>
                         </div>
-                        <div style="margin-top: 10px;">
-                            <button class="cta-button btn btn-info">APPLY</button>
+
+                        <div class="price-table">
+                            <div class="plan-banner">
+                                <img src="assets/plan_3.png">
+                            </div>
+                            <div style="padding: 10px 15px 0 15px; text-align: start;">
+                                <li>5 Subjects</li>
+                                <li>SGD$600/Month <span class="badge bg-danger">Save $150!</span></li>
+                                <li>3 Free Trial Classes</li>
+                                <li>First Three Months material Paid!</li>
+                                </span>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <button class="cta-button btn btn-info"
+                                    onclick="location.href = './pages/join-us/transfer.js';" type="submit" id="D"
+                                    value="Set D">APPLY</button>
+                            </div>
                         </div>
+
                     </div>
-
-                    <div class="price-table">
-                        <div class="plan-banner">
-                            <img src="assets/plan_2.png">
-                        </div>
-                        <div style="padding: 10px 20px 0 20px; text-align: start;">
-                            <li>3 Subjects</li>
-                            <li>SGD$390/Month <span class="badge bg-danger">Save $60!</span></li>
-                            <li>2 Free Trial Classes</li>
-                            <li>First Month material Paid!</li>
-                            </span>
-                        </div>
-                        <div style="margin-top: 10px;">
-                            <button class="cta-button btn btn-info">APPLY</button>
-                        </div>
-                    </div>
-
-                    <div class="price-table">
-                        <div class="plan-banner">
-                            <img src="assets/plan_3.png">
-                        </div>
-                        <div style="padding: 10px 15px 0 15px; text-align: start;">
-                            <li>5 Subjects</li>
-                            <li>SGD$600/Month <span class="badge bg-danger">Save $150!</span></li>
-                            <li>3 Free Trial Classes</li>
-                            <li>First Three Months material Paid!</li>
-                            </span>
-                        </div>
-                        <div style="margin-top: 10px;">
-                            <button class="cta-button btn btn-info">APPLY</button>
-                        </div>
-                    </div>
-
-                </div>
-
+                    <script type="text/javascript" src="./pages/join-us/transfer.js"></script>
+                </form>
             </div>
         </div>
 
