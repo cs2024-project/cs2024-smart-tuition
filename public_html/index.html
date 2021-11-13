@@ -52,7 +52,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false" href="#">Classes</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Class schedule</a></li>
-                                <li><a class="dropdown-item" href="#">Fee</a></li>
+                                <li><a class="dropdown-item" href="../public_html/pages/price/price.html">Fee</a></li>
                                 <li><a class="dropdown-item" href="#">English, Maths, Science (EMS)</a></li>
                                 <li><a class="dropdown-item" href="#">Non-academic* temp name</a></li>
                             </ul>
@@ -123,35 +123,43 @@
         </div>
         <!-- WAVE END -->
         <div id="section-dark" style="height: 100%;">
-            <div id="section-content">
+            <div id="section-content" style="flex-direction: row;">
                 <h1>
                     EMS TABS
                 </h1>
 
-                <div style="padding: 50px; width: 50%;">
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1"
-                                type="button" role="tab" aria-controls="nav-1" aria-selected="true">English</button>
-                            <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2"
-                                type="button" role="tab" aria-controls="nav-2" aria-selected="false">Math</button>
-                            <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3"
-                                type="button" role="tab" aria-controls="nav-3" aria-selected="false">Science</button>
+                <div style="width: 100%; display: flex;">
+                    <div style="padding: 50px; width: 65%; min-width: 250px; overflow: auto;">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1"
+                                    aria-selected="true">English</button>
+                                <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2"
+                                    type="button" role="tab" aria-controls="nav-2" aria-selected="false">Math</button>
+                                <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3"
+                                    type="button" role="tab" aria-controls="nav-3"
+                                    aria-selected="false">Science</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel">
+                                ENGLISH CONTENT</div>
+                            <div class="tab-pane fade" id="nav-2" role="tabpanel">Maths
+                            </div>
+                            <div class="tab-pane fade" id="nav-3" role="tabpanel">Science
+                            </div>
                         </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-1" role="tabpanel"
-                            style="background-color: teal; height: 300px; border-radius: 0 0 50px 50px;">
-                            ENGLISH CONTENT</div>
-                        <div class="tab-pane fade" id="nav-2" role="tabpanel"
-                            style="background-color: teal; height: 300px;">Maths
+                    </div>
+                    <div style="display:flex; width: 30%;                    align-items: center;">
+                        <div class="img-container" style="transform: translate(-10px,-70px);"> <img
+                                src="assets/english.png"></div>
+                        <div class="img-container" style="transform: translate(0,50px);"> <img src="assets/science.png">
                         </div>
-                        <div class="tab-pane fade" id="nav-3" role="tabpanel"
-                            style="background-color: teal; height: 300px;">Science
+                        <div class="img-container" style="transform: translate(0,-40px);"> <img src="assets/math.png">
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 

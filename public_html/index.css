@@ -143,3 +143,31 @@
             0 0 0 0px rgba(230, 205, 110, 0.2);
     }
 }
+
+#nav-tab .active {
+    background-color: lemonchiffon;
+    border: solid lemonchiffon;
+}
+
+.nav-link .active {
+    background-color: red;
+}
+
+.tab-pane {
+    padding: 20px;
+    background-color: cornsilk;
+    height: 300px;
+    border-radius: 0 0 40px 40px;
+}
+
+.img-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.img-container img {
+    max-width: 100%;
+    object-fit: contain;
+
+}
