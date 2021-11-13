@@ -95,7 +95,7 @@
                     <iframe
                         src="
                 https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7136383779975!2d103.68094601475408!3d1.348309899016626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0f0a99014463%3A0xb8bb0800c52d8219!2sNanyang%20Technological%20University!5e0!3m2!1sen!2ssg!4v1633233008589!5m2!1sen!2ssg"
-                        width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        width="100%" height="100%" style="border:0; overflow:hidden" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
                 <div style="display: flex; width: 50%; text-align: center; align-items: center;">
@@ -131,26 +131,23 @@
             </div>
         </div>
         <div class="d-flex align-items-center justify-content-center" id="section-dark">
-            <form style="align-items: center;">
-                <p class="required-field">
-                    Name
-                </p>
-                <input type="text" style="width: 500px;padding: 1px 2px 1px 2px; border-color: #767676;" id="parentName"
-                    required></p>
-                <br>
-                <p class="required-field" style="margin-top:10px;">
-                    Contact Number (eg. 91234567)
-                </p>
-                <input type="tel" id="contactNo" style="width: 500px; padding: 1px 2px 1px 2px;"
-                    pattern="[6,8,9]{1}[0-9]{7}" required>
-                </p><br>
-                <p class="required-field" style="width:300px;height: 30px;">
-                    Message
-                </p>
-                <textarea style="width: 500px; height: 150px;padding: 1px 2px 1px 2px; border-color: #767676"
-                    id="txtbox" rows="3" required></textarea>
-                <br><br>
-                <input type="submit" class="submit-button" onclick='myFunction()'>
+            <form>
+                <div>
+                    <label for="parentName" class="form-label" id="required-field">Name</label>
+                    <input type="text" width="500px" style="width:100%;padding: 1px 2px 1px 2px; border-color: #767676;"
+                        id="parentName" required>
+                </div>
+                <div style="margin-top:20px;">
+                    <label for="contactNo" class="form-label" id="required-field">Contact Number (eg. 91234567)</label>
+                    <input type="tel" id="contactNo" style="width: 100%; padding: 1px 2px 1px 2px;"
+                        pattern="[6,8,9]{1}[0-9]{7}" required>
+                </div>
+                <div style="margin-top:20px">
+                    <label for="contactNo" class="form-label" id="required-field">Message</label>
+                    <textarea style="width: 100%; height: 150px;padding: 1px 2px 1px 2px; border-color: #767676"
+                        id="txtbox" rows="3" required></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary" id="submit-button" onclick='myFunction()'>
                 <script>
                     function myFunction() {
                         if ((document.getElementById("parentName").value != "" && document.getElementById(

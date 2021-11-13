@@ -39,7 +39,7 @@
     padding: 0 10px;
 }
 
-.submit-button {
+#submit-button {
     background-color: #F0F5F5;
     border-color: #F0F5F5;
     color: #010B2B;
@@ -160,7 +160,7 @@
     }
 }
 
-.required-field::after {
+#required-field::after {
     content: "*";
     color: red;
 }
