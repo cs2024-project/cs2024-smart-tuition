@@ -47,6 +47,9 @@
 #section-light {
     background-color: #F0F5F5;
     padding: 0 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 #section-content {
@@ -58,6 +61,17 @@
 
 #section-dark-header {
     height: 150px;
+}
+
+#required-field::after {
+    content: "*";
+    color: red;
+}
+
+#subid {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px
 }
 
 .header-1 {
