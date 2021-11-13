@@ -155,7 +155,8 @@
 }
 
 .price-table {
-    background-color: wheat;
+    /* background-color: wheat; */
+    background-color: cornsilk;
     box-shadow: lightgray 3px 3px;
     border-radius: 20px;
     height: 340px;

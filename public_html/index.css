@@ -144,20 +144,30 @@
     }
 }
 
-#nav-tab .active {
-    background-color: lemonchiffon;
-    border: solid lemonchiffon;
+/* * FOR EMS SECTION */
+
+/* .nav {
+    flex-wrap: nowrap;
+    overflow: auto;
+} */
+
+.nav-tabs .nav-link {
+    background-color: rgba(255, 250, 205, 0.1);
 }
 
-.nav-link .active {
-    background-color: red;
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #FF8800;
 }
+
+
 
 .tab-pane {
     padding: 20px;
     background-color: cornsilk;
     height: 300px;
     border-radius: 0 0 40px 40px;
+    box-shadow: rgba(100, 100, 100, 0.3) 5px 5px;
 }
 
 .img-container {
@@ -171,6 +181,9 @@
     object-fit: contain;
 
 }
+
+/* * END EMS SECTION */
+
 
 /* * TAKEN FROM PRICE SECTION */
 
@@ -190,7 +203,7 @@
 }
 
 .price-table {
-    background-color: wheat;
+    background-color: cornsilk;
     box-shadow: grey 3px 3px;
     border-radius: 20px;
     height: 340px;
