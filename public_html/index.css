@@ -171,3 +171,42 @@
     object-fit: contain;
 
 }
+
+/* * TAKEN FROM PRICE SECTION */
+
+
+.price-table-container {
+    display: flex;
+
+    /* responsiveness */
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    /* border: blue 1px solid; */
+    height: 100%;
+    margin-top: 50px;
+
+}
+
+.price-table {
+    background-color: wheat;
+    box-shadow: grey 3px 3px;
+    border-radius: 20px;
+    height: 340px;
+    width: 300px;
+    text-align: center;
+
+    /* margin when wrapped */
+    margin-bottom: 50px;
+}
+
+.plan-banner {
+    width: 300px;
+}
+
+.plan-banner img {
+    border-radius: 20px 20px 0 0px;
+    width: 300px;
+    object-fit: cover;
+}
