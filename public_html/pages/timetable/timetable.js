@@ -1,5 +1,6 @@
 function showEng() {
     document.getElementById("sub").innerHTML = "<u>English</u>";
+    document.getElementById("download").innerHTML = "Click <a href='../../images/English-Timetable.jpg' download><u>here</u></a> to download the timetable.";
     document.getElementById("gird").style.visibility = "visible";
     document.getElementById("mon1").innerHTML = "<strong>Level 1</strong><br>Mr John Ng<br> Classroom 1-1";
     document.getElementById("mon1").style.backgroundColor = "lightblue";
@@ -58,6 +59,7 @@ function showEng() {
 
 function showMat() {
     document.getElementById("sub").innerHTML = "<u>Math</u>";
+    document.getElementById("download").innerHTML = "Click <a href='../../images/Math-Timetable.jpg' download><u>here</u></a> to download the timetable.";
     document.getElementById("gird").style.visibility = "visible";
     document.getElementById("mon1").innerHTML = "<strong>Level 2</strong><br>Mr Kim Seng<br> Classroom 1-2";
     document.getElementById("mon1").style.backgroundColor = "LightSeaGreen";
@@ -116,6 +118,7 @@ function showMat() {
 
 function showSci() {
     document.getElementById("sub").innerHTML = "<u>Science</u>";
+    document.getElementById("download").innerHTML = "Click <a href='../../images/Science-Timetable.jpg' download><u>here</u></a> to download the timetable.";
     document.getElementById("gird").style.visibility = "visible";
     document.getElementById("mon1").innerHTML = "<strong>Level 4</strong><br>Mr Tom Lim<br> Classroom 1-3";
     document.getElementById("mon1").style.backgroundColor = "LightSeaGreen";
@@ -173,6 +176,7 @@ function showSci() {
 
 function showCod() {
     document.getElementById("sub").innerHTML = "<u>Coding</u>";
+    document.getElementById("download").innerHTML = "Click <a href='../../images/Coding-Timetable.jpg' download><u>here</u></a> to download the timetable.";
     document.getElementById("gird").style.visibility = "visible";
     document.getElementById("mon1").innerHTML = "<strong>Level 3</strong><br>Mr Vũ Bảo Thái<br> Classroom 1-4";
     document.getElementById("mon1").style.backgroundColor = "LightPink";
@@ -230,6 +234,7 @@ function showCod() {
 
 function showSnD() {
     document.getElementById("sub").innerHTML = "<u>Speech and Drama</u>";
+    document.getElementById("download").innerHTML = "Click <a href='../../images/SpeechNDrama-Timetable.jpg' download><u>here</u></a> to download the timetable.";
     document.getElementById("gird").style.visibility = "visible";
     document.getElementById("mon1").innerHTML = "<strong>Level 3</strong><br>Mr Tony King<br> Classroom 1-5";
     document.getElementById("mon1").style.backgroundColor = " LightSalmon";
@@ -287,6 +292,7 @@ function showSnD() {
 
 function showArt() {
     document.getElementById("sub").innerHTML = "<u>Art</u>";
+    document.getElementById("download").innerHTML = "Click <a href='../../images/Art-Timetable.jpg' download><u>here</u></a> to download the timetable.";
     document.getElementById("gird").style.visibility = "visible";
     document.getElementById("mon1").innerHTML = "<strong>Sculpting</strong><br>Ms Salena Keller<br> Classroom 1-6";
     document.getElementById("mon1").style.backgroundColor = "lightyellow";
