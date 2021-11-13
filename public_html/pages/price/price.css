@@ -1,0 +1,178 @@
+/** Dark blue (#010B2B) is navbar and footer
+** Pastel blue (#AEC6CF) and
+** White (#F0F5F5) is alternating sections/ negative space
+** Orange (#FF8800) for CTA */
+
+
+#container {
+    font-family: 'Overpass';
+    /* TODO: for MOBILE, STANDARDISE ACROSS */
+    margin: 0 auto;
+    min-width: 300px;
+
+}
+
+.navbar {
+    padding: 0 10%;
+    background-color: #010B2B;
+    color: #F0F5F5;
+
+}
+
+.navbar a {
+    margin-right: 5px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.cta-button {
+    background-color: #FF8800;
+    border-color: #FF8800;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    height: 42px;
+    min-width: 130px;
+    padding: 0 10px;
+}
+
+#section-dark {
+    background-color: #AEC6CF;
+    padding: 0 10%;
+}
+
+#section-light {
+    background-color: #F0F5F5;
+    padding: 0 10%;
+}
+
+#section-content {
+    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST*/
+
+    height: 100%;
+    /* temp border */
+    border: solid 1px black;
+}
+
+#section-dark-header {
+    background-color: #AEC6CF;
+    height: 150px;
+
+    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #010B2B;
+    padding: 0 10%;
+}
+
+.header-1 {
+    font-size: 40px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* TODO: replace header-1, then standardise across */
+.header-1-temporary {
+
+    font-size: 40px;
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 80px;
+
+}
+
+
+.para {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cta-wave-light {
+    background-color: #F0F5F5;
+    max-height: 400px;
+}
+
+/* Unique Components */
+.to-top-button {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    right: 5%;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+}
+
+.to-top-button:hover {
+    animation: bounce 3s linear infinite;
+}
+
+@keyframes bounce {
+    40% {
+        transform: translateY(25%);
+    }
+
+    40% {
+        transform: translateY(-25%);
+    }
+}
+
+/* * TO BE USED AT HOME PAGE */
+
+.price-table-container {
+    display: flex;
+
+    /* responsiveness */
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    /* border: blue 1px solid; */
+    height: 100%;
+    margin-top: 50px;
+
+}
+
+.price-table {
+    /* background-color: wheat; */
+    background-color: cornsilk;
+    box-shadow: lightgray 3px 3px;
+    border-radius: 20px;
+    height: 340px;
+    width: 300px;
+    text-align: center;
+
+    /* margin when wrapped */
+    margin-bottom: 50px;
+}
+
+.plan-banner {
+    width: 300px;
+}
+
+.plan-banner img {
+    border-radius: 20px 20px 0 0px;
+    width: 300px;
+    object-fit: cover;
+}

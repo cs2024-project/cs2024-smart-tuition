@@ -1,0 +1,142 @@
+/** Dark blue (#010B2B) is navbar and footer
+** Pastel blue (#AEC6CF) and
+** White (#F0F5F5) is alternating sections/ negative space
+** Orange (#FF8800) for CTA */
+
+
+#container {
+    font-family: 'Overpass';
+    /* TODO: for MOBILE, STANDARDISE ACROSS */
+    margin: 0 auto;
+    min-width: 300px;
+
+}
+
+.navbar {
+    padding: 0 10%;
+    background-color: #010B2B;
+    color: #F0F5F5;
+
+}
+
+.navbar a {
+    margin-right: 5px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.cta-button {
+    background-color: #FF8800;
+    border-color: #FF8800;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    height: 42px;
+    min-width: 130px;
+    padding: 0 10px;
+}
+
+#section-dark {
+    background-color: #AEC6CF;
+    padding: 0 10%;
+}
+
+#section-light {
+    background-color: #F0F5F5;
+    padding: 0 10%;
+}
+
+#section-content {
+    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST*/
+
+    height: 100%;
+    /* temp border */
+    border: solid 1px black;
+}
+
+#section-dark-header {
+    background-color: #AEC6CF;
+    height: 150px;
+
+    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #010B2B;
+    padding: 0 10%;
+}
+
+.header-1 {
+    font-size: 40px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* TODO: replace header-1, then standardise across */
+.header-1-temporary {
+
+    font-size: 40px;
+    height: auto;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 80px;
+
+}
+
+
+.para {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cta-wave-light {
+    background-color: #F0F5F5;
+    max-height: 400px;
+}
+
+/* Unique Components */
+
+
+@keyframes bounce {
+    40% {
+        transform: translateY(25%);
+    }
+
+    40% {
+        transform: translateY(-25%);
+    }
+}
+
+.carousel-content {
+    height: 400px;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF8800' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF8800' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
