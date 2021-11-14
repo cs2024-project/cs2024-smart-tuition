@@ -50,13 +50,12 @@
 
 #section-light {
     background-color: #F0F5F5;
-    padding: 0 10%;
+    padding: 50PX 10%;
 }
 
 #section-content {
     height: 100%;
-    /* temp border */
-    border: solid 1px black;
+
 }
 
 #section-dark-header {
