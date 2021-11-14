@@ -279,17 +279,23 @@
     font-style: italic;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
 
     .resp-message {
         display: unset;
     }
 
-    .img-container {
-        display: none;
-    }
 
     #game-table {
         display: none;
     }
+}
+
+@media (max-width: 450px) {
+
+
+    .img-container {
+        display: none;
+    }
+
 }
