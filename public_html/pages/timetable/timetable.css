@@ -247,7 +247,11 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
+
+    #section-light {
+        padding-bottom: 300px;
+    }
 
     .grid-item {
         display: none;
