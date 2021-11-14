@@ -61,16 +61,26 @@
 }
 
 #section-dark-header {
-    padding: 0 10%;
     background-color: #AEC6CF;
+    height: 150px;
+
+    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-1 {
     font-size: 40px;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 100px;
 }
 
 .para {
@@ -93,4 +103,53 @@
     background-color: #AEC6CF;
     max-height: 400px;
     /* border: white 3px solid */
+}
+
+
+.header-icon {
+    width: 100px;
+    float: right;
+    transform: translate(-0px, 15px);
+}
+
+@media (max-width: 450px) {
+    #section-dark-header {
+        height: 180px;
+    }
+
+    table .sect-title-1 {
+        display: none;
+    }
+
+
+    #section-light {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    table tr {
+        padding: 5px;
+    }
+
+    .header-1 {
+        padding-left: 10px;
+    }
+
+    .header-icon {
+        transform: translate(-10px, 15px);
+    }
+}
+
+@media (max-width: 330px) {
+    .header-1 {
+        padding-left: 0;
+    }
+
+    .header-icon {
+        display: none;
+    }
+}
+
+.pointer {
+    cursor: pointer;
 }

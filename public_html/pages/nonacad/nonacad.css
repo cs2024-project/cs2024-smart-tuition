@@ -50,6 +50,7 @@
 }
 
 #section-content {
+    max-width: 1280px;
     height: 100%;
     /* temp border */
     border: solid 1px black;
@@ -59,7 +60,6 @@
     background-color: #AEC6CF;
     height: 150px;
 
-    /* TODO: STANDARDISE FOR ALL, DISCUSS FIRST */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +218,7 @@
 }
 
 .header-icon {
-    width: 80px;
+    width: 65px;
     float: right;
     transform: translate(-0px, 15px);
 }
@@ -244,64 +244,6 @@
 
     .header-icon {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-
-    #section-light {
-        padding-bottom: 300px;
-    }
-
-    .grid-item {
-        display: none;
-    }
-
-    .item1 {
-        display: none;
-    }
-
-    .item2 {
-        display: none;
-    }
-
-    .item3 {
-        display: none;
-    }
-
-    .item4 {
-        display: none;
-    }
-
-    .item5 {
-        display: none;
-    }
-
-    .item6 {
-        display: none;
-    }
-
-    .item7 {
-        display: none;
-    }
-
-    .item8 {
-        display: none;
-    }
-
-    .item9 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .btn-group {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #section-light .btn {
-        border-radius: 0;
     }
 }
 

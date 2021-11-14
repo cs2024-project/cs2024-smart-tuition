@@ -7,6 +7,8 @@
 
 #container {
     font-family: 'Overpass';
+    margin: 0 auto;
+    min-width: 300px;
 }
 
 .navbar {
@@ -40,9 +42,9 @@
 }
 
 #submit-button {
-    background-color: #F0F5F5;
+    /* background-color: #F0F5F5;
     border-color: #F0F5F5;
-    color: #010B2B;
+    color: #010B2B; */
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
@@ -77,8 +79,11 @@
 }
 
 #section-dark-header {
-    padding: 0 10%;
     background-color: #AEC6CF;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #faq {
@@ -105,9 +110,15 @@
 .header-1 {
     font-size: 40px;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 100px;
+
 }
 
 .para {
@@ -150,6 +161,13 @@
     animation: bounce 3s linear infinite;
 }
 
+#section-1-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 @keyframes bounce {
     40% {
         transform: translateY(25%);
@@ -163,4 +181,74 @@
 #required-field::after {
     content: "*";
     color: red;
+}
+
+.group-icons {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+#google-maps {
+    margin-right: 50px;
+
+}
+
+.header-icon {
+    width: 100%;
+    min-width: 85px;
+    max-width: 100px;
+    float: right;
+    transform: translate(-0px, 15px);
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 450px) {
+
+    #section-1-container {
+
+        flex-direction: column;
+    }
+
+    .header-1 {
+        padding-left: 90px;
+    }
+
+    .header-icon {
+        transform: translate(-35px, 15px);
+    }
+
+    #google-maps {
+        display: block;
+        margin: 0;
+    }
+
+    .group-icons {
+        margin-top: 40px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .group-icons .col {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #section-light {
+        height: 100%
+    }
+
+}
+
+@media (max-width: 380px) {
+    .group-icons {
+        flex-direction: column;
+    }
+}
+
+.pointer {
+    cursor: pointer;
 }

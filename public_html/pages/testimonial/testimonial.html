@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYZMSN5N3D"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JYZMSN5N3D');
+</script>
 
 <head>
     <!-- Required meta tags always come first -->
@@ -7,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link href="assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../../assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Bootstrap CSS (NODE_MODULES) -->
     <!-- build:css css/main.css -->
@@ -22,9 +34,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- endbuild -->
 
-    <title>Smart Tuition</title>
+    <title>Smart Tuition - Testimonials</title>
 
 </head>
 
@@ -34,7 +47,6 @@
     </a> -->
     <!-- MAIN BODY CONTAINER -->
     <div id="container">
-
         <nav class="navbar sticky-top navbar-expand-md navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../../index.html"><img src="../../assets/header logo.png"
@@ -46,38 +58,43 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" href="#">Classes</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Class schedule</a></li>
-                                <li><a class="dropdown-item" href="#">Fee</a></li>
-                                <li><a class="dropdown-item" href="#">English, Maths, Science (EMS)</a></li>
-                                <li><a class="dropdown-item" href="#">Non-academic* temp name</a></li>
+                                <li><a class="dropdown-item" href="../timetable/timetable.html">Class
+                                        schedule</a></li>
+                                <li><a class="dropdown-item" href="../../pages/price/price.html">Pricing</a></li>
+                                <li><a class="dropdown-item" href="../../pages/ems/ems.html">English, Maths, Science
+                                        (EMS)</a></li>
+                                <li><a class="dropdown-item" href="../../pages/nonacad/nonacad.html">Enrichment</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="teachers.html">Teachers</a>
+                            <a class="nav-link" href="../../pages/teachers/teachers.html">Teachers</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
+                            <a class="nav-link  dropdown-toggle active" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" href="#">About</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Why us</a></li>
-                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
-                                <li><a class="dropdown-item" href="#">About us</a></li>
+                                <li><a class="dropdown-item" href="../why-us/Why-us.html">Why us</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../../pages/testimonial/testimonial.html">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="../../pages/about-us/about-us.html">About us</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promotions</a>
+                            <a class="nav-link" href="../../pages/promotions/promotions.html">Promotions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="../../pages/contact/contact.html">Contact</a>
                         </li>
                         <li class="nav-item" style="margin-left: 20px;">
-                            <button class="cta-button btn btn-warning"><strong>Join Us</strong></button>
+                            <button class="cta-button btn btn-warning"
+                                onclick="location.href = '../../pages/join-us/join-us.html';" <strong>Join
+                                Us</strong></button>
                         </li>
                     </ul>
                 </div>
@@ -85,9 +102,9 @@
         </nav>
 
         <div id="section-dark-header">
-            <div class="header-1-temporary">
+            <div class="header-1">
                 TESTIMONIALS
-                <img src="../../assets/header_fees.png" style="width:80px; float:right; transform: translate(5px);">
+                <img src="../../assets/header_testimonial.png" class="header-icon">
             </div>
         </div>
 
@@ -97,73 +114,213 @@
                     OUR BELOVED STUDENTS
                 </h1>
                 <h3>
-                    What do students think about Smart Tuition?
+                    Here's what some of our students have to say about their experience!
                 </h3>
 
-                <div class="card-content">
-                    <h3>student 1</h3>
+                <div class="gallery-container">
+                    <!-- 1 -->
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>I used to not like studying, but Mr Tom has taught me
+                                that learning can be fun and exciting! His science classes are the best!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/test_1.PNG">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Khali, Primary 4 Student
+                                <br>Hougang Primary School
+                                <i>A* for Science</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>Thank you Ms Clare for helping me improve my English
+                                from a C to an A!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/test_2.png">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Stephanie Lau, Primary 5 Student
+                                <br>Ang Mo Kio Primary School
+                                <i>A for English</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>Learning at Smart Tuition is
+                                a lot of
+                                fun
+                                and I get to meet
+                                many
+                                new
+                                friends.
+                                <br><br>
+                                My Mathematics result has also drastically improved thanks to
+                                Mr KC!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/testimonial_1.png">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Ang Shi Bing, Primary 3 Student
+                                <br>Ang Mo Kio Primary School
+                                <i>A for Mathematics & Science</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>Going to tuition makes school lessons easier and more
+                                fun
+                                for me.<br><br>I also enjoy the Speech and Drama classes a lot!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/test_3.png">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Morrison Lau, Primary 2 Student
+                                <br>Monfort Primary School
+                                <i>A* for English & Math</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>I am a big Minecraft fan and
+                                Computer
+                                Programming Class has taught me how to program my own game!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/testimonial_3.png">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Dwayne Yong, Primary 4 Student
+                                <br>Ang Mo Kio Primary School
+                                <i>A for Mathematics & Science</i>
+                                <i>Gold Medalist National Robotics Competition</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>I love Mr Tom's Science classes!
+                                <br><br>He always shows us his cool science experiments!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/test_5.png">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Ng Wei Ting, Primary 4 Student
+                                <br>Yio Chu Kang Primary School
+                                <i>A* for English, Mathematics & Science</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>Smart Tuition helped me with cultivating good
+                                learning and studying habits, which ultimately got me into my ideal school. Thank you
+                                teachers at Smart Tuition!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/test_4.png">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Nuraishah, Secondary 1 Student
+                                <br>Anderson Secondary School
+                                <i>PSLE Aggregate of 257</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="testimonial-text">
+                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>Thanks to the creative
+                                teaching
+                                methods at Smart Tuition, I was able to excel in my academics
+                                and get
+                                into my dream
+                                school!
+                                <strong>&rdquo;</strong></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;  justify-content: center; ">
+                            <div class="avatar">
+                                <img src="../../assets/testimonial_2.jpg">
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center;">
+                                Charlotte Quek, Secondary 1 Student
+                                <br>Raffles Girls' School
+                                <i>PSLE Aggregate of 270</i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
 
+        <!-- FOOTER WAVE START -->
 
-        <!-- WAVE START -->
-        <!-- TODO: WAVE SHOULD BE WITH FOOTER, SAME LEVEL AS HEADER -->
-        <div class="cta-wave-light">
-            <h1>
-                final section cta (not done)
-            </h1>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1000 300">
-                <path fill="#010B2B" fill-opacity="1"
-                    d="M0,128L60,149.3C120,171,240,213,360,192C480,171,600,85,720,69.3C840,53,960,107,1080,122.7C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        <div style="background-color: #f0f5f5; ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#010b2b" fill-opacity="1"
+                    d="M0,128L48,128C96,128,192,128,288,144C384,160,480,192,576,186.7C672,181,768,139,864,138.7C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
         </div>
-        <!-- WAVE END -->
+        <!-- FOOTER WAVE END -->
+
         <!-- Footer -->
-        <footer class="footer text-center text-md-start text-muted">
-            <center style="transform: translate(0,-200px);">
-                <img src="../../assets/science.png" height="200px">
+        <footer class="footer text-center text-md-start text-muted" style="padding-bottom: 10px;">
+            <center style="transform: translateY(-100px);">
+                <img src="../../assets/join-us.png" height="150px">
                 <h1 style="color: whitesmoke;">
-                    Join us <p style="display: inline-flex;flex-direction: row; color: #FF8800;">today!</p>
+                    Join us <p style="display: inline-flex; flex-direction: row; color: #FF8800;">today!</p>
                 </h1>
-                <button class="cta-button btn btn-warning">EAT SHIT</button> <button
-                    class="cta-button btn btn-warning">AND
-                    DIE</button>
+
+                <button class="btn btn-outline-light" style="    text-transform: uppercase;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            height: 42px;
+            min-width: 130px;
+            padding: 0 10px;" onclick="location.href='../../pages/contact/contact.html';">CONTACT US</button>
+                <button class="cta-button btn btn-warning"
+                    onclick="location.href='../../pages/join-us/join-us.html';">APPLY
+                    NOW</button>
             </center>
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
-
-                <!-- Left -->
-
-                <div class="me-5 d-none d-lg-block">
-                    <span>Get connected with us on social networks:</span>
-                </div>
-                <!-- Left -->
-
-                <!-- Right -->
-                <div>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <!-- Right -->
             </section>
             <!-- Section: Social media -->
 
@@ -175,12 +332,13 @@
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <!-- Content -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                <i class="fas fa-gem me-3"></i>Company name
+                            <h6 class="text-uppercase fw-bold mb-4">Smart Tuition pte ltd
                             </h6>
                             <p>
-                                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit.
+                                50 Nanyang Ave<br>
+                                West Entrance<br>
+                                Singapore 639798<br>
+                                +65 6123 4321
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -189,19 +347,22 @@
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                Products
+                                Quick Links
                             </h6>
-                            <p>
-                                <a href="#!" class="text-reset">Angular</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../join-us/join-us.html" class="text-reset">Join Us</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">React</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../timetable/timetable.html" class="text-reset">Class Schedule</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Vue</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../price/price.html" class="text-reset">Pricing</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Laravel</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../ems/ems.html" class="text-reset">Curriculum (EMS)</a>
+                            </p>
+                            <p style="margin-bottom: 10px; white-space: nowrap;">
+                                <a href="../nonacad/nonacad.html" class="text-reset">Curriculum<br>(Enrichment)</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -210,20 +371,24 @@
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                Useful links
+                                Quick Links
                             </h6>
-                            <p>
-                                <a href="#!" class="text-reset">Pricing</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../about-us/about-us.html" class="text-reset">About Us</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Settings</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../why-us/Why-us.html" class="text-reset">Why Choose Us</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Orders</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../teachers/teachers.html" class="text-reset">Our Teachers</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Help</a>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../contact/contact.html" class="text-reset">Contact Us</a>
                             </p>
+                            <p style="margin-bottom: 10px;">
+                                <a href="../pdpa/pdpa.html" class="text-reset">Privacy Statement</a>
+                            </p>
+
                         </div>
                         <!-- Grid column -->
 
@@ -231,15 +396,21 @@
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <!-- Links -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                Contact
+                                Connect With Us
                             </h6>
-                            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                            <p>
-                                <i class="fas fa-envelope me-3"></i>
-                                info@example.com
-                            </p>
-                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                            <link rel="stylesheet"
+                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                            <i class="fab fa-twitter fa-lg pointer" style="margin-right:10px"
+                                onclick="location.href = 'https:\\www.twitter.com';"></i>
+                            <i class=" fab fa-instagram fa-lg pointer" style="margin-right:10px"
+                                onclick="location.href = 'https:\\www.instagram.com';"></i>
+                            <i class="fab fa-facebook fa-lg pointer" style="margin-right:10px"
+                                onclick="location.href = 'https:\\www.facebook.com';"></i>
+                            <i class="fab fa-youtube fa-lg pointer" style="margin-right:10px"
+                                onclick="location.href = 'https:\\www.youtube.com';"></i>
+                            <i class="fab fa-linkedin fa-lg pointer" style="margin-right:10px"
+                                onclick="location.href = 'https:\\www.linkedin.com';"></i>
+                            <p style="margin-top: 20px;"> &copy; 2021 Smart Tuition Pte Ltd</p>
                         </div>
                         <!-- Grid column -->
                     </div>
@@ -248,12 +419,6 @@
             </section>
             <!-- Section: Links  -->
 
-            <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                © 2021 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
         </footer>
         <!-- Footer -->
 

@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYZMSN5N3D"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JYZMSN5N3D');
+</script>
 
 <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="styleGame.css">
+    <meta name="Description" content="Best Tuition center in Singapore." />
     <link href="assets/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Bootstrap CSS (NODE_MODULES) -->
@@ -22,6 +35,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- endbuild -->
 
     <title>Smart Tuition</title>
@@ -45,16 +59,18 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" href="#">Classes</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Class schedule</a></li>
-                                <li><a class="dropdown-item" href="../public_html/pages/price/price.html">Fee</a></li>
-                                <li><a class="dropdown-item" href="#">English, Maths, Science (EMS)</a></li>
-                                <li><a class="dropdown-item" href="#">Non-academic* temp name</a></li>
+                                <li><a class="dropdown-item" href="pages/timetable/timetable.html">Class
+                                        schedule</a></li>
+                                <li><a class="dropdown-item" href="pages/price/price.html">Pricing</a></li>
+                                <li><a class="dropdown-item" href="pages/ems/ems.html">English, Maths, Science
+                                        (EMS)</a></li>
+                                <li><a class="dropdown-item" href="pages/nonacad/nonacad.html">Enrichment</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -64,26 +80,29 @@
                             <a class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" href="#">About</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Why us</a></li>
-                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
-                                <li><a class="dropdown-item" href="#">About us</a></li>
+                                <li><a class="dropdown-item" href="pages/why-us/Why-us.html">Why us</a></li>
+                                <li><a class="dropdown-item" href="pages/testimonial/testimonial.html">Testimonial</a>
+                                </li>
+                                <li><a class="dropdown-item" href="pages/about-us/about-us.html">About us</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public_html/pages/promotions/promotions.html">Promotions</a>
+                            <a class="nav-link" href="pages/promotions/promotions.html">Promotions</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/contact/contact.html">Contact</a>
                         </li>
                         <li class="nav-item" style="margin-left: 20px;">
-                            <button class="cta-button btn btn-warning"><strong>Join Us</strong></button>
+                            <button class="cta-button btn btn-warning"
+                                onclick="location.href = 'pages/join-us/join-us.html';" <strong>Join
+                                Us</strong></button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div id="section-dark" style="height: 400px;">
+        <div id="section-dark" style="height: 400px; background: linear-gradient(#CDE8FA, #AFD9F4);">
             <div id="section-content" style=" justify-content: center; background-image: url(./assets/homepg.png);">
                 <div class="header-1">
                     Smart Tuition
@@ -105,23 +124,87 @@
             </div>
         </div>
 
-        <div id="section-light" style="height: 400px; ">
+        <div id="section-light">
             <div id="section-content">
-
-                <h1>
-                    why us + stats
-                </h1>
-                heres why we could be the best education for YOUR child<br>
-
+                <h1 style="padding-top:50px; padding-bottom: 50px;">Let our numbers make the choice for you</h1>
+                <div class="row row-cols-md-4 row-cols-sm-6" style="padding-bottom: 50px;">
+                    <div class="col">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="white-space: nowrap;">
+                                <img src="./assets/stat_1.png" alt="students" width="80" height="80">
+                                <h2 style="margin-top: 8px;display: inline-flex;" class="counter" data-target="240">
+                                    0
+                                </h2>
+                            </div>
+                            students enrolled in 2020
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="white-space: nowrap;">
+                                <img src="./assets/stat_2.png" alt="students" width="80" height="80">
+                                <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="800">0
+                                </h2>
+                            </div>
+                            recommendation letters
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="white-space: nowrap;">
+                                <img src="./assets/stat_3.png" alt="students" width="80" height="80">
+                                <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="1734">0
+                                </h2>
+                            </div>
+                            students to date
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-md-4 row-cols-sm-6">
+                    <div class="col">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="white-space: nowrap;">
+                                <img src="./assets/stat_4.png" alt="students" width="80" height="80">
+                                <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="98">0</h2>%
+                            </div>
+                            of students shown improvement
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="white-space: nowrap;">
+                                <img src="./assets/stat_5.png" alt="students" width="80" height="80">
+                                <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="97">0</h2>%
+                            </div>
+                            of students have at least an A for PSLE
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="white-space: nowrap;">
+                                <img src="./assets/stat_6.png" alt="students" width="80" height="80">
+                                <h2 style="margin-top: 8px;display: inline;" class="counter" data-target="100">0</h2>
+                            </div>
+                            awards achieved by center
+                        </div>
+                    </div>
+                    <script src="number-animation.js"></script>
+                </div>
             </div>
         </div>
 
         <!-- WAVE START -->
-        <div style="background-color: #f0f5f0;">
-            demo purposes for wave effect only, add only after content finalised
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
-                <path fill="#AEC6CF" fill-opacity="1"
-                    d="M0,128L60,149.3C120,171,240,213,360,192C480,171,600,85,720,69.3C840,53,960,107,1080,122.7C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        <div style="background-color: #f0f5f0; padding-top: 70px;">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 250" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(174, 198, 207, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(174, 198, 207, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                    d="M0,75L80,62.5C160,50,320,25,480,33.3C640,42,800,83,960,87.5C1120,92,1280,58,1440,41.7C1600,25,1760,25,1920,25C2080,25,2240,25,2400,41.7C2560,58,2720,92,2880,95.8C3040,100,3200,75,3360,66.7C3520,58,3680,67,3840,66.7C4000,67,4160,58,4320,79.2C4480,100,4640,150,4800,154.2C4960,158,5120,117,5280,87.5C5440,58,5600,42,5760,54.2C5920,67,6080,108,6240,116.7C6400,125,6560,100,6720,95.8C6880,92,7040,108,7200,125C7360,142,7520,158,7680,150C7840,142,8000,108,8160,87.5C8320,67,8480,58,8640,45.8C8800,33,8960,17,9120,33.3C9280,50,9440,100,9600,112.5C9760,125,9920,100,10080,112.5C10240,125,10400,175,10560,179.2C10720,183,10880,142,11040,125C11200,108,11360,117,11440,120.8L11520,125L11520,250L11440,250C11360,250,11200,250,11040,250C10880,250,10720,250,10560,250C10400,250,10240,250,10080,250C9920,250,9760,250,9600,250C9440,250,9280,250,9120,250C8960,250,8800,250,8640,250C8480,250,8320,250,8160,250C8000,250,7840,250,7680,250C7520,250,7360,250,7200,250C7040,250,6880,250,6720,250C6560,250,6400,250,6240,250C6080,250,5920,250,5760,250C5600,250,5440,250,5280,250C5120,250,4960,250,4800,250C4640,250,4480,250,4320,250C4160,250,4000,250,3840,250C3680,250,3520,250,3360,250C3200,250,3040,250,2880,250C2720,250,2560,250,2400,250C2240,250,2080,250,1920,250C1760,250,1600,250,1440,250C1280,250,1120,250,960,250C800,250,640,250,480,250C320,250,160,250,80,250L0,250Z">
                 </path>
             </svg>
         </div>
@@ -133,7 +216,7 @@
                 </h1>
 
                 <div style="width: 100%; display: flex;">
-                    <div style="padding: 50px; width: 65%; min-width: 250px; overflow: auto;">
+                    <div class="tab-container">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab"
@@ -148,14 +231,34 @@
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-1" role="tabpanel">
-                                ENGLISH CONTENT</div>
-                            <div class="tab-pane fade" id="nav-2" role="tabpanel">Maths
+                                Our English PSLE curriculum is a proven successful model of teaching through years of
+                                experimentation and refinement. Every linguistic technique taught is tailored with time
+                                and moving with it.<br><br>Under our English curriculum, your student will see
+                                significant
+                                improvement in their reading, writing and Paper 2 techniques.
                             </div>
-                            <div class="tab-pane fade" id="nav-3" role="tabpanel">Science
+                            <div class="tab-pane fade" id="nav-2" role="tabpanel">Our Mathematics curriculum has been
+                                one that is proven to help formerly weaker students understand the complicated process
+                                of question solving, and to begin visualising models. Currently strong
+                                students are given the extra push they need for the examination, or even, a step further
+                                into
+                                secondary school.<br><br>We focus on conceptual understanding, breaking thought
+                                processes
+                                into
+                                digestible pieces and in accuracy.
+                            </div>
+                            <div class="tab-pane fade" id="nav-3" role="tabpanel">Our Science syllabus keeps students
+                                constantly on their toes on scientific concepts learnt throughout the year, by relating
+                                the concepts to real life. This prompts students to always ask questions to better
+                                understand.<br><br>We also
+                                have emphasis in answering techniques, to help students gain the points usually lost in
+                                Booklet B. Through our science lessons, students will be able to understand concepts,
+                                answering techniques while walking out with observational skills that will benefit them
+                                for life.
                             </div>
                         </div>
                     </div>
-                    <div style="display:flex; width: 30%;                    align-items: center;">
+                    <div class="img-container-1">
                         <div class="img-container" style="transform: translate(-10px,-70px);"> <img
                                 src="assets/english.png"></div>
                         <div class="img-container" style="transform: translate(0,50px);"> <img src="assets/science.png">
@@ -168,119 +271,215 @@
         </div>
 
         <div id="section-light">
-            <div id="section-content">
+            <div id="section-content" style="padding: 50px 0;">
                 <h1>
-                    game demo <br><br><br>
+                    Game demo
                 </h1>
-                <hr>
-                <h1>
-                    Testimonials
-                </h1>
-                <div style="background-color: cornsilk;">
-                    <div style="text-align: center; background-color: cornsilk;">
-                        <h3 style="padding: 20px 0 10px 0;">Hear from our beloved students!</h3>
-                    </div>
+                Here is what you can come up with after attending just 4 sessions of programming class!
+                <div>
+                    <table style="width: 100%; padding-top: 20px;" id="game-table">
+                        <tr style="border:1px solid black;">
+                        <tr>
+                            <td rowspan="4" style="border:1px solid black; width: 60%;">
+                                <img src="assets/game-background.jpg" width="700" height="222" align="left"
+                                    alt="Game background">
+                                <div id="game">
+                                    <div id="chara"></div>
+                                    <div id="block"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="border:1px solid black; text-align: center;">
+                            <td>
+                                <strong>Pseudocode</strong>
+                            </td>
+                        </tr>
+                        <tr style="border:1px solid black; text-align: center;">
+                            <td>
+                                <div id='first' style="height: 30px;margin-bottom: 0px;">Hurdle move </div>
+                            </td>
+                        </tr>
+                        <tr style="border:1px solid black; text-align: center;">
+                            <td>
+                                <p id='second' style="height: 30px;margin-bottom: 0px;">Character jump </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="resp-message"><br>Please view the demo on a larger device</div>
+                </div>
+                <br>
+                <button id='btn' type="button" class="btn btn-outline-danger"
+                    onclick="ani(); high1('first','blue',1800); high2('second','red');" value="Try Me!">Try Me!</button>
 
 
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
-                        style="margin-bottom: 40px;">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="carousel-content" style="overflow: auto;">
-                                    <div style="width: 75%; text-align: center; min-width: 340px; overflow: auto;">
-                                        <div class="testimonial-text">
-                                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>Learning at Smart Tuition is a lot of
-                                                fun
-                                                and I get to meet
-                                                many
-                                                new
-                                                friends.
-                                                <br><br>
-                                                My Mathematics result has also drastically improved thanks to
-                                                Mr KC!
-                                                <strong>&rdquo;</strong></i>
-                                        </div>
-                                        <br>
-                                        <div style="display: flex;  justify-content: center; ">
-                                            <div class="avatar">
-                                                <img src="assets/testimonial_1.png">
-                                            </div>
-                                            <div
-                                                style="display: flex; flex-direction: column; justify-content: center;">
-                                                Ang Shi Bing, Primary 3 Student
-                                                <br>Ang Mo Kio Primary School
-                                                <i>A1 for Mathematics, Science</i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-content" style="overflow: auto;">
-                                    <div style="width: 75%; text-align: center; min-width: 340px; overflow: auto;">
-                                        <div class="testimonial-text">
-                                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>Thanks to the creative teaching
-                                                methods at Smart Tuition, I was able to excel in my academics and get
-                                                into my dream
-                                                school!
-                                                <strong>&rdquo;</strong></i>
-                                        </div>
-                                        <br>
-                                        <div style="display: flex;  justify-content: center; ">
-                                            <div class="avatar">
-                                                <img src="assets/testimonial_2.jpg">
-                                            </div>
-                                            <div
-                                                style="display: flex; flex-direction: column; justify-content: center;">
-                                                Charlotte Quek, Secondary 1 Student
-                                                <br> Raffles Girls' School
-                                                <i>PSLE Aggregate of 270</i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-content" style="overflow: auto;">
-                                    <div style="width: 75%; text-align: center; min-width: 340px; overflow: auto;">
-                                        <div class="testimonial-text">
-                                            <i><strong>&ldquo;&nbsp;&nbsp;</strong>I am a big Minecraft fan and Computer
-                                                Programming Class has taught me how to program my own game!
-                                                <strong>&rdquo;</strong></i>
-                                        </div>
-                                        <br>
-                                        <div style="display: flex;  justify-content: center; ">
-                                            <div class="avatar">
-                                                <img src="assets/testimonial_3.png">
-                                            </div>
-                                            <div
-                                                style="display: flex; flex-direction: column; justify-content: center;">
-                                                Dwayne Yong, Primary 4 Student
-                                                <br>Ang Mo Kio Primary School
-                                                <i>A1 for Mathematics, Science</i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <script>
+                    function ani() {
+                        document.getElementById("btn").disabled = true;
+                        setTimeout(function () {
+                            document.getElementById("btn").disabled = false;
+                        }, 3000);
+                        document.getElementById("chara").classList.add('chara');
+                        document.getElementById("block").classList.add('block');
+                        var element = document.getElementById('chara');
+                        var element1 = document.getElementById('block');
+                        style1 = window.getComputedStyle(element);
+                        style2 = window.getComputedStyle(element1);
+                        var char = document.getElementById("chara");
+                        document.getElementById("chara").style.animationPlayState = "running";
+                        document.getElementById("block").style.animationPlayState = "running";
+                        const music = new Audio('assets/jump.mp3');
+                        setTimeout(function () {
+                            music.play();
+                        }, 500);
+                        document.getElementById("chara").style.animationIterationCount = 1;
+                        document.getElementById("block").style.animationIterationCount = 1;
+                        setTimeout(function () {
+                            document.getElementById("chara").classList.remove('chara');
+                        }, 1800);
+                        setTimeout(function () {
+                            document.getElementById("block").classList.remove('block');
+                        }, 1800);
+
+                    }
+
+                    function high1(id, color, seconds) {
+                        var element = document.getElementById(id);
+                        var origcolor = element.style.backgroundColor;
+                        element.style.backgroundColor = color;
+                        var t = setTimeout(function () {
+                            element.style.backgroundColor = origcolor;
+                        }, seconds);
+                    }
+
+                    function high2(id, color) {
+                        var element = document.getElementById(id);
+                        var origcolor = element.style.backgroundColor;
+                        var t1 = setTimeout(function () {
+                            element.style.backgroundColor = color;
+                        }, 600);
+                        var t = setTimeout(function () {
+                            element.style.backgroundColor = origcolor;
+                        }, (1150));
+                    }
+                </script>
+                <div style="padding-top: 50px;">
+                    <h1>
+                        Testimonials
+                    </h1>
+                    <div style="background-color: cornsilk;">
+                        <div style="text-align: center; background-color: cornsilk;">
+                            <h3 style="padding: 20px 0 10px 0;">Hear from our beloved students!</h3>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+
+
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                            style="margin-bottom: 40px;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-content" style="overflow: auto;">
+                                        <div
+                                            style="width: 75%; text-align: center;  padding: 20px; min-width: 300px;  overflow: auto;">
+                                            <div class="testimonial-text">
+                                                <i><strong>&ldquo;&nbsp;&nbsp;</strong>Learning at Smart Tuition is
+                                                    a lot of
+                                                    fun
+                                                    and I get to meet
+                                                    many
+                                                    new
+                                                    friends.
+                                                    <br><br>
+                                                    My Mathematics result has also drastically improved thanks to
+                                                    Mr KC!
+                                                    <strong>&rdquo;</strong></i>
+                                            </div>
+                                            <br>
+                                            <div style="display: flex;  justify-content: center; ">
+                                                <div class="avatar">
+                                                    <img src="assets/testimonial_1.png">
+                                                </div>
+                                                <div
+                                                    style="display: flex; flex-direction: column; justify-content: center;">
+                                                    Ang Shi Bing, Primary 3 Student
+                                                    <br>Ang Mo Kio Primary School
+                                                    <i>A for Mathematics & Science</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-content" style="overflow: auto;">
+                                        <div
+                                            style="width: 75%; text-align: center; padding: 20px; min-width: 300px; overflow: auto;">
+                                            <div class="testimonial-text">
+                                                <i><strong>&ldquo;&nbsp;&nbsp;</strong>Thanks to the creative
+                                                    teaching
+                                                    methods at Smart Tuition, I was able to excel in my academics
+                                                    and get
+                                                    into my dream
+                                                    school!
+                                                    <strong>&rdquo;</strong></i>
+                                            </div>
+                                            <br>
+                                            <div style="display: flex;  justify-content: center; ">
+                                                <div class="avatar">
+                                                    <img src="assets/testimonial_2.jpg">
+                                                </div>
+                                                <div
+                                                    style="display: flex; flex-direction: column; justify-content: center;">
+                                                    Charlotte Quek, Secondary 1 Student
+                                                    <br> Raffles Girls' School
+                                                    <i>PSLE Aggregate of 270</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-content" style="overflow: auto;">
+                                        <div
+                                            style="width: 75%; text-align: center; padding: 20px; min-width: 300px; overflow: auto;">
+                                            <div class="testimonial-text">
+                                                <i><strong>&ldquo;&nbsp;&nbsp;</strong>I am a big Minecraft fan and
+                                                    Computer
+                                                    Programming Class has taught me how to program my own game!
+                                                    <strong>&rdquo;</strong></i>
+                                            </div>
+                                            <br>
+                                            <div style="display: flex;  justify-content: center; ">
+                                                <div class="avatar">
+                                                    <img src="assets/testimonial_3.png">
+                                                </div>
+                                                <div
+                                                    style="display: flex; flex-direction: column; justify-content: center;">
+                                                    Dwayne Yong, Primary 4 Student
+                                                    <br>Ang Mo Kio Primary School
+                                                    <i>A for Mathematics & Science</i>
+                                                    <i>Gold Medalist National Robotics Competition</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; padding-bottom: 40px;">
+                        <button class="btn btn-outline-danger"
+                            onclick="location.href = './pages/testimonial/testimonial.html';">View more</button>
                     </div>
                 </div>
-
-                <div style="text-align: center; padding-bottom: 40px;">
-                    <button class="btn btn-light cta-button">View more</button>
-                </div>
-
 
             </div>
         </div>
@@ -288,7 +487,7 @@
         <div id="section-dark">
             <div id="section-content">
                 <h1>
-                    PRICE
+                    Pricing
                 </h1>
                 <form action="./pages/join-us/join-us.html">
                     <div class="price-table-container">
@@ -352,65 +551,44 @@
             </div>
         </div>
 
-        <!-- WAVE START -->
-
-        <div class="cta-wave-dark">
-            <h1>
-                final section cta (not done)
-            </h1>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1000 300">
-                <path fill="#010B2B" fill-opacity="1"
-                    d="M0,128L60,149.3C120,171,240,213,360,192C480,171,600,85,720,69.3C840,53,960,107,1080,122.7C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-                </path>
-            </svg>
-        </div>
-        <!-- WAVE END -->
     </div>
     <!-- end of body container -->
 
 
+    <!-- FOOTER WAVE START -->
+
+    <div style="background-color: #AEC6CF; ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#010b2b" fill-opacity="1"
+                d="M0,128L48,128C96,128,192,128,288,144C384,160,480,192,576,186.7C672,181,768,139,864,138.7C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <!-- FOOTER WAVE END -->
+
     <!-- Footer -->
-    <footer class="footer text-center text-md-start text-muted">
-        <center style="transform: translate(0,-200px);">
+    <footer class="footer text-center text-md-start text-muted" style="padding-bottom: 10px;">
+        <center style="transform: translateY(-100px);">
             <img src="assets/join-us.png" height="150px">
             <h1 style="color: whitesmoke;">
-                Join us <p style="display: inline-flex;flex-direction: row; color: #FF8800;">today!</p>
+                Join us <p style="display: inline-flex; flex-direction: row; color: #FF8800;">today!</p>
             </h1>
-            <button class="cta-button btn btn-warning">EAT SHIT</button> <button class="cta-button btn btn-warning">AND
-                DIE</button>
+
+            <button class="btn btn-outline-light" style="    text-transform: uppercase;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            height: 42px;
+            min-width: 130px;
+            padding: 0 10px;" onclick="location.href='pages/contact/contact.html';">CONTACT US</button>
+            <button class="cta-button btn btn-warning" onclick="location.href='pages/join-us/join-us.html';">APPLY
+                NOW</button>
         </center>
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
-
-            <!-- Left -->
-
-            <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
-
-            <!-- Right -->
-            <div>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <!-- Right -->
         </section>
         <!-- Section: Social media -->
 
@@ -422,12 +600,14 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Company name
+                        <h6 class="text-uppercase fw-bold mb-4">Smart Tuition
+                            <i class="fas fa-gem me-3"></i>
                         </h6>
                         <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                            50 Nanyang Ave<br>
+                            West Entrance<br>
+                            Singapore 639798<br>
+                            +65 6123 4321
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -436,19 +616,22 @@
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Products
+                            Quick Links
                         </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Angular</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/join-us/join-us.html" class="text-reset">Join Us</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">React</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/timetable/timetable.html" class="text-reset">Class Schedule</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Vue</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/price/price.html" class="text-reset">Pricing</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Laravel</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/ems/ems.html" class="text-reset">Curriculum (EMS)</a>
+                        </p>
+                        <p style="margin-bottom: 10px; white-space: nowrap;">
+                            <a href="./pages/nonacad/nonacad.html" class="text-reset">Curriculum<br>(Enrichment)</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -457,20 +640,24 @@
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
+                            Quick Links
                         </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Pricing</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/about-us/about-us.html" class="text-reset">About Us</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Settings</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/why-us/Why-us.html" class="text-reset">Why Choose Us</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/teachers/teachers.html" class="text-reset">Our Teachers</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/contact/contact.html" class="text-reset">Contact Us</a>
                         </p>
+                        <p style="margin-bottom: 10px;">
+                            <a href="./pages/pdpa/pdpa.html" class="text-reset">Privacy Statement</a>
+                        </p>
+
                     </div>
                     <!-- Grid column -->
 
@@ -478,15 +665,21 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Contact
+                            Connect With Us
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                        <i class="fab fa-twitter fa-lg pointer" style="margin-right:10px"
+                            onclick="location.href = 'https:\\www.twitter.com';"></i>
+                        <i class=" fab fa-instagram fa-lg pointer" style="margin-right:10px"
+                            onclick="location.href = 'https:\\www.instagram.com';"></i>
+                        <i class="fab fa-facebook fa-lg pointer" style="margin-right:10px"
+                            onclick="location.href = 'https:\\www.facebook.com';"></i>
+                        <i class="fab fa-youtube fa-lg pointer" style="margin-right:10px"
+                            onclick="location.href = 'https:\\www.youtube.com';"></i>
+                        <i class="fab fa-linkedin fa-lg pointer" style="margin-right:10px"
+                            onclick="location.href = 'https:\\www.linkedin.com';"></i>
+                        <p style="margin-top: 20px;"> &copy; 2021 Smart Tuition Pte Ltd</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -494,13 +687,6 @@
             </div>
         </section>
         <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
     </footer>
     <!-- Footer -->
     </div>

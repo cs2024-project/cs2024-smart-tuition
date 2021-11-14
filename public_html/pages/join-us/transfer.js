@@ -2,7 +2,6 @@ var a = document.getElementById('A');
 var b = document.getElementById('B');
 var c = document.getElementById('C');
 var d = document.getElementById('D');
-
 A.addEventListener("click", setA, false);
 B.addEventListener("click", setB, false);
 C.addEventListener("click", setC, false);

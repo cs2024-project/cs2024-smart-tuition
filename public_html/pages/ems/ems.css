@@ -7,8 +7,8 @@
 
 #container {
     font-family: 'Overpass';
-    min-width: 300px;
-    overflow: hidden;
+    margin: 0 auto;
+    min-width: 400px;
 }
 
 .navbar {
@@ -49,9 +49,6 @@
 #section-light {
     background-color: #F0F5F5;
     padding: 0 10%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
 }
 
 #section-content {
@@ -62,27 +59,27 @@
 }
 
 #section-dark-header {
+    background-color: #AEC6CF;
     height: 150px;
-}
 
-#required-field::after {
-    content: "*";
-    color: red;
-}
-
-#subid {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-1 {
     font-size: 40px;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 80px;
 }
+
 
 .para {
     font-size: 16px;
@@ -106,53 +103,22 @@
     /* border: white 3px solid */
 }
 
-/* Unique Components */
-.to-top-button {
-    background-color: transparent;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 5%;
-    right: 5%;
-    height: 70px;
-    width: 70px;
-    border-radius: 100px;
+.header-icon {
+    width: 65px;
+    float: right;
+    transform: translate(-0px, 15px);
 }
 
-.to-top-button:hover {
-    animation: bounce 3s linear infinite;
-}
-
-@keyframes bounce {
-    40% {
-        transform: translateY(25%);
+@media (max-width: 450px) {
+    .header-1 {
+        padding-left: 55px;
     }
 
-    40% {
-        transform: translateY(-25%);
+    .header-icon {
+        transform: translate(-10px, 15px);
     }
 }
 
 .pointer {
     cursor: pointer;
-}
-
-.display-table {
-    margin: 0 20%;
-    width: 30%;
-    height: 100%;
-}
-
-@media (max-width: 500px) {
-
-    .header-1-caption {
-        width: 250px;
-        overflow: auto;
-        white-space: normal;
-    }
-
-    .display-table {
-        margin: 0 10%;
-    }
 }

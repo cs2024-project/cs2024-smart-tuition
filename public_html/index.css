@@ -41,7 +41,7 @@
 
 #section-dark {
     background-color: #AEC6CF;
-    padding: 0 10%;
+    padding: 20px 10%;
 }
 
 #section-light {
@@ -50,10 +50,9 @@
 }
 
 #section-content {
-    max-width: 1280px;
     height: 100%;
     /* temp border */
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 #section-dark-header {
@@ -162,14 +161,26 @@
     color: #FF8800;
 }
 
-
+.tab-container {
+    padding: 50px;
+    width: 80%;
+    min-width: 250px;
+    overflow: auto;
+}
 
 .tab-pane {
+    overflow: auto;
     padding: 20px;
     background-color: cornsilk;
     height: 300px;
     border-radius: 0 0 40px 40px;
     box-shadow: rgba(100, 100, 100, 0.3) 5px 5px;
+}
+
+.img-container-1 {
+    display: flex;
+    width: 30%;
+    align-items: center;
 }
 
 .img-container {
@@ -188,7 +199,7 @@
 
 /* * START TESTIMONIAL SECTION */
 .carousel-content {
-    height: 300px;
+    height: 320px;
     background-color: cornsilk;
     display: flex;
     justify-content: center;
@@ -270,3 +281,43 @@
 }
 
 /* * PRICE SECTION END */
+
+
+/* TODO:  MOBILE */
+
+.resp-message {
+    display: none;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+
+    .resp-message {
+        display: unset;
+    }
+
+
+    #game-table {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .img-container-1 {
+        display: none;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .tab-container {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
