@@ -76,7 +76,7 @@
     justify-content: center;
     align-items: center;
 
-    /* to offset the icon's positioning (80px) */
+    /* to offset the icon's positioning  */
     padding-left: 65px;
 }
 
@@ -217,4 +217,29 @@
     grid-row-start: 14;
     grid-column-start: 2;
     grid-row-end: 16;
+}
+
+#section-light .card-body {
+    min-height: 400px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#section-light .card-text {
+    min-height: 250px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.header-icon {
+    width: 65px;
+    float: right;
+    transform: translate(-0px, 15px);
+}
+
+
+@media (max-width: 450px) {
+    .header-icon {
+        transform: translate(-10px, 15px);
+    }
 }
