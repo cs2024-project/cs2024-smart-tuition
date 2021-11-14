@@ -13,7 +13,6 @@ var parentName = document.getElementById('parentname');
 var contact = document.getElementById('contactno');
 var childName = document.getElementById('childName');
 var childLv = document.getElementById('priId');
-
 set1 = localStorage.getItem("set");
 if (set1 == "Set C") {
     document.getElementById("subid2").disabled = false;
@@ -37,7 +36,7 @@ sub3.addEventListener("change", checkSame, false);
 sub4.addEventListener("change", checkSame, false);
 sub5.addEventListener("change", checkSame, false);
 
-submitBtn.addEventListener("click", transfer, false);
+document.getElementById('submitBtn').addEventListener("click", transfer, false);
 
 function showone() {
     document.getElementById("subid2").disabled = true;
@@ -74,6 +73,7 @@ function checkSame() {
 }
 
 function transfer() {
+
     if (document.getElementById('inlineRadio3').checked) {
         localStorage.setItem("ParName", parentName.value);
         localStorage.setItem("contact", contact.value);
