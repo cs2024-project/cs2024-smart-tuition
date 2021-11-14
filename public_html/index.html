@@ -553,19 +553,14 @@
 
     </div>
     <!-- end of body container -->
+
+
     <!-- FOOTER WAVE START -->
 
-    <div style="background-color: #010b2b; z-index: 1;">
-        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 250" version="1.1"
-            xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(174, 198, 207, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(174, 198, 207, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-1)"
-                d="M0,75L80,62.5C160,50,320,25,480,33.3C640,42,800,83,960,87.5C1120,92,1280,58,1440,41.7C1600,25,1760,25,1920,25C2080,25,2240,25,2400,41.7C2560,58,2720,92,2880,95.8C3040,100,3200,75,3360,66.7C3520,58,3680,67,3840,66.7C4000,67,4160,58,4320,79.2C4480,100,4640,150,4800,154.2C4960,158,5120,117,5280,87.5C5440,58,5600,42,5760,54.2C5920,67,6080,108,6240,116.7C6400,125,6560,100,6720,95.8C6880,92,7040,108,7200,125C7360,142,7520,158,7680,150C7840,142,8000,108,8160,87.5C8320,67,8480,58,8640,45.8C8800,33,8960,17,9120,33.3C9280,50,9440,100,9600,112.5C9760,125,9920,100,10080,112.5C10240,125,10400,175,10560,179.2C10720,183,10880,142,11040,125C11200,108,11360,117,11440,120.8L11520,125L11520,250L11440,250C11360,250,11200,250,11040,250C10880,250,10720,250,10560,250C10400,250,10240,250,10080,250C9920,250,9760,250,9600,250C9440,250,9280,250,9120,250C8960,250,8800,250,8640,250C8480,250,8320,250,8160,250C8000,250,7840,250,7680,250C7520,250,7360,250,7200,250C7040,250,6880,250,6720,250C6560,250,6400,250,6240,250C6080,250,5920,250,5760,250C5600,250,5440,250,5280,250C5120,250,4960,250,4800,250C4640,250,4480,250,4320,250C4160,250,4000,250,3840,250C3680,250,3520,250,3360,250C3200,250,3040,250,2880,250C2720,250,2560,250,2400,250C2240,250,2080,250,1920,250C1760,250,1600,250,1440,250C1280,250,1120,250,960,250C800,250,640,250,480,250C320,250,160,250,80,250L0,250Z">
+    <div style="background-color: #AEC6CF; ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#010b2b" fill-opacity="1"
+                d="M0,128L48,128C96,128,192,128,288,144C384,160,480,192,576,186.7C672,181,768,139,864,138.7C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
         </svg>
     </div>
@@ -573,13 +568,23 @@
 
     <!-- Footer -->
     <footer class="footer text-center text-md-start text-muted" style="padding-bottom: 10px;">
-        <center style="transform: translateY(-150px);">
+        <center style="transform: translateY(-100px);">
             <img src="assets/join-us.png" height="150px">
             <h1 style="color: whitesmoke;">
-                Join us <p style="display: inline-flex;flex-direction: row; color: #FF8800;">today!</p>
+                Join us <p style="display: inline-flex; flex-direction: row; color: #FF8800;">today!</p>
             </h1>
-            <button class="btn btn-outline-light" style="border-color: transparent;">CONTACT US</button> <button
-                class="cta-button btn btn-warning">APPLY
+
+            <button class="btn btn-outline-light" style="    text-transform: uppercase;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            height: 42px;
+            min-width: 130px;
+            padding: 0 10px;" onclick="location.href='pages/contact/contact.html';">CONTACT US</button>
+            <button class="cta-button btn btn-warning" onclick="location.href='pages/join-us/join-us.html';">APPLY
                 NOW</button>
         </center>
         <!-- Section: Social media -->
