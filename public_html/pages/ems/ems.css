@@ -115,7 +115,7 @@
     }
 
     .header-icon {
-        transform: translate(-10px, 15px);
+        transform: translate(0px, 15px);
     }
 }
 

@@ -111,6 +111,9 @@
     width: auto;
     height: 100%;
     object-fit: cover;
+
+    /* check */
+    max-height: 400px;
 }
 
 .grid-container {

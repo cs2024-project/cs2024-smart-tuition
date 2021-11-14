@@ -233,7 +233,7 @@
     }
 
     .header-icon {
-        transform: translate(-10px, 15px);
+        transform: translate(10px, 15px);
     }
 }
 
