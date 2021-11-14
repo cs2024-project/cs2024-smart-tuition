@@ -6,6 +6,7 @@
 
 #container {
     font-family: 'Overpass';
+    min-width: 300px;
 }
 
 .navbar {
@@ -49,7 +50,6 @@
 }
 
 #section-content {
-    max-width: 1280px;
     height: 100%;
     /* temp border */
     /* border: solid 1px black; */
@@ -57,8 +57,11 @@
 
 #section-dark-header {
     background-color: #AEC6CF;
-
     height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -69,9 +72,14 @@
 .header-1 {
     font-size: 40px;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning () */
+    padding-left: 110px;
 }
 
 .para {
@@ -112,11 +120,97 @@
 }
 
 .plan-banner {
-    width: 300px;
+    max-width: 300px;
 }
 
 .plan-banner img {
     border-radius: 20px 20px 0 0px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
+}
+
+#promo-banner {
+    display: flex;
+    align-items: center;
+}
+
+#promo-outer {
+    height: 100%;
+    width: 70%;
+}
+
+#promo-inner {
+    padding: 8% 5% 8% 20%;
+}
+
+#promo-img-container {
+    display: inline-flex;
+    height: 100%;
+}
+
+.header-icon {
+    width: 110px;
+    float: right;
+    transform: translate(-0px, 15px);
+}
+
+.more-promo-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .more-promo-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-1 {
+        padding-left: 10%;
+    }
+
+    .header-icon {
+        width: 70px;
+        transform: translate(-45px, 20px);
+    }
+
+    #section-light {
+        padding: 0 20px;
+        display: flex;
+        text-align: justify;
+    }
+
+    #promo-inner {
+        padding: 0;
+    }
+
+
+    #promo-banner {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: flex-start;
+        max-width: 300px;
+    }
+
+    #promo-outer {
+        display: flex;
+    }
+
+
+}
+
+@media (max-width: 370px) {
+    .header-1 {
+        padding-left: 0;
+    }
+
+    .header-1 img {
+        display: none;
+    }
 }
