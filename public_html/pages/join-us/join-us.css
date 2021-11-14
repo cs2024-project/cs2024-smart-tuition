@@ -7,6 +7,8 @@
 
 #container {
     font-family: 'Overpass';
+    min-width: 300px;
+    overflow: hidden;
 }
 
 .navbar {
@@ -134,4 +136,23 @@
 
 .pointer {
     cursor: pointer;
+}
+
+.display-table {
+    margin: 0 20%;
+    width: 30%;
+    height: 100%;
+}
+
+@media (max-width: 500px) {
+
+    .header-1-caption {
+        width: 250px;
+        overflow: auto;
+        white-space: normal;
+    }
+
+    .display-table {
+        margin: 0 10%;
+    }
 }
