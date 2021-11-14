@@ -7,6 +7,8 @@
 
 #container {
     font-family: 'Overpass';
+    margin: 0 auto;
+    min-width: 300px;
 }
 
 .navbar {
@@ -57,17 +59,27 @@
 }
 
 #section-dark-header {
-    padding: 0 10%;
     background-color: #AEC6CF;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-1 {
     font-size: 40px;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to offset the icon's positioning (80px) */
+    padding-left: 80px;
 }
+
 
 .para {
     font-size: 16px;
