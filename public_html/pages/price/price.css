@@ -163,3 +163,7 @@
     width: 300px;
     object-fit: cover;
 }
+
+.pointer {
+    cursor: pointer;
+}

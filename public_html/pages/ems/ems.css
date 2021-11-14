@@ -118,3 +118,7 @@
         transform: translate(-10px, 15px);
     }
 }
+
+.pointer {
+    cursor: pointer;
+}

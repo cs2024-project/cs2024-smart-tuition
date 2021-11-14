@@ -131,3 +131,7 @@
         transform: translateY(-25%);
     }
 }
+
+.pointer {
+    cursor: pointer;
+}

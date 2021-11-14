@@ -90,3 +90,7 @@
     max-height: 400px;
     /* border: white 3px solid */
 }
+
+.pointer {
+    cursor: pointer;
+}
