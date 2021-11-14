@@ -3,14 +3,13 @@ var sub2 = document.getElementById('subid2');
 var sub3 = document.getElementById('subid3');
 var sub4 = document.getElementById('subid4');
 var sub5 = document.getElementById('subid5');
-var radio = document.getElementsByName('inlineRadioOptions');
 var radio1 = document.getElementById('inlineRadio1');
 var radio2 = document.getElementById('inlineRadio2');
 var radio3 = document.getElementById('inlineRadio3');
 var radio4 = document.getElementById('inlineRadio4');
 
 var parentName = document.getElementById('parentname');
-var contact = document.getElementById('contactno');
+var contact = document.getElementById('contactNo');
 var childName = document.getElementById('childName');
 var childLv = document.getElementById('priId');
 set1 = localStorage.getItem("set");
